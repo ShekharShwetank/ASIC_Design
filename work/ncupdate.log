@@ -1,0 +1,6 @@
+ncupdate(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncvlog: Memory Usage - 21.4M program + 29.2M data = 50.5M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 6.4% cpu)
+ncvlog: Memory Usage - 21.4M program + 29.2M data = 50.5M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 6.4% cpu)
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
