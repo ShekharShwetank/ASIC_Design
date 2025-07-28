@@ -1,0 +1,6 @@
+General information about this run 
+-- piranha worklib.sync_FA_tb:module
+-- TOOL:	cfe64	15.20.s086..-()
+-- cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+-- Options : +TOOLNAME halsynth -HAL ALL -BB_SIG_SIZE 16384 +DISABLE -MULTI_DRIVEN_REG TRI -NOLOG +PRIM_TRI +FSM_RULE_CHECKS -SYNTHESIS ALL -IGNORE_COMB_INIT -VITAL_BLACKBOX +MDARRAY_ON -DEFINES /home/install/INCISIVE152/tools/hal/files/hal.def -DUMP +RULES_LIST +HAL_SIDEFILE hal.log -PRAGMA ALL -cdslib /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/cds.lib worklib.sync_FA_tb:module
+-- SMV File is :/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/INCA_libs/worklib/sync_FA_tb/module/sync_FA_tb.smv

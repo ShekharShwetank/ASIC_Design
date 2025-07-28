@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(14Jul2025:09:30:11):( xrun four_bitcounter.v four_bitcounter_tb.v -access +rwc -gui )
+s2::(14Jul2025:09:39:13):( xrun four_bitcounter.v four_bitcounter_tb.v -access +rwc -gui )

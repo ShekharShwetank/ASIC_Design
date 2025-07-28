@@ -1,0 +1,63 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm decoder_tb.uut.rst decoder_tb.uut.a decoder_tb.uut.y
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 50 NS + 0
+./decoder_tb.v:30         $finish;
+ncsim> coverage -analyze
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  36
+  expressions :  0
+  toggle signals :  48
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  decoder_tb(decoder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1c1b8ae2_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_1c1b8ae2_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  36
+  expressions :  0
+  toggle signals :  48
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  decoder_tb(decoder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1c1b8ae2_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_1c1b8ae2_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 296.0M data = 334.7M total (346.2M Peak)
+ncsim: CPU Usage - 0.8s system + 0.2s user = 1.0s total (122.3s, 0.8% cpu)
