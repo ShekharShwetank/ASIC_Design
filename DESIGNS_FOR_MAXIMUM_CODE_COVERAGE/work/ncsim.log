@@ -1,0 +1,64 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm decoder_tb.rst decoder_tb.clk decoder_tb.a decoder_tb.y
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 130 NS + 0
+./decoder_tb.v:47         $finish;
+ncsim> coverage -analyze
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  46
+  expressions :  0
+  toggle signals :  52
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  decoder_tb(decoder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3520d7e4_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_3520d7e4_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  46
+  expressions :  0
+  toggle signals :  52
+  fsm states :  0
+  fsm transitions :  0
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  decoder_tb(decoder_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3520d7e4_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_3520d7e4_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 296.0M data = 334.7M total (346.2M Peak)
+ncsim: CPU Usage - 0.2s system + 0.1s user = 0.3s total (39.4s, 0.8% cpu)
