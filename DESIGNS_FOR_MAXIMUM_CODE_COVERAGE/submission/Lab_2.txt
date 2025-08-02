@@ -1,0 +1,67 @@
+##Creating script for Run:
+
+1. set_db init_lib_search_path <library path>
+2. set_db init_hdl_search_path <rtl path>
+3. read_libs <library path>
+4. read_libs <rtl path>
+5. elaborate
+6. read_sdc <sdc file name with path>
+
+## sdc- synopsis design contraint flow
+
+7.	set_db syn_generic_effort <effort level> ##generic black box
+	set_db syn_map_effort <effort level>  ##mapping the gates in the netlist
+	set_db syn_opt_effort <effort level>  ##optimizing the netlist
+	syn_generic
+	syn_map
+	syn_opt
+
+8. SET effort as "low";"medium";"high"
+
+9.	write_hdl > <name_netlist.v>
+10.	write_sdc > <name_sdc.sdc>
+
+## sdf : standard delay format:
+11.	write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge -setuphold split > <name_sdf.sdf>
+	## if posedge design use -nonegchecks
+	
+#####################
+
+## input to the synthesis tool: 
+1. input .v file
+2. input .g constraint file
+3. input library
+
+4. o/p constraint .sdc generated
+5. o/p gate lvl netlist
+
+
+##SDC FILE:
+create_clock -name clk -period 10 -waveform {0 5} [get_ports "clk"]
+set_clock_transition -rise 0.1 [get_clocks "clk"]
+set_clock_transition -fall 0.1 [get_clocks "clk"]
+set_clock_uncertainty 0.01 [get_ports "clk"]
+set_input_delay -max 1.0 [get_ports "rst"] -clock [get_clocks "clk"]
+set_output_delay -max 1.0 [get_ports "op_port_name"] -clock [get_clocks "clk"]
+
+## Start Genus:
+csh
+source /home/install/cshrc
+genus &
+1. set_db init_lib_search_path <library path>
+2. set_db init_hdl_search_path <rtl path>
+3. read_libs <library path>
+4. read_libs <rtl path>
+5. elaborate
+6. read_sdc <sdc file name with path>
+library_path: /home/install/FOUNDRY/digital/90nm/dig/lib
+rtl_path: 
+
+## GUI:
+gui_show
+gui_hide
+
+##REPORT TIMING:
+report_timing
+report_power
+report_qor

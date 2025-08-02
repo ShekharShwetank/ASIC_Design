@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Thu Jul 31 04:27:32 PM IST 2025
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: student
+Host: ic312.vit.ac.in
+Platform: Linux/x86_64/4.18.0-425.19.2.el8_7.x86_64
+Started: Thu Jul 31 04:27:32 PM IST 2025
+Command: /home/install/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ic312.vit.ac.in:41089 -64BIT
+Work Directory: /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:33 PM IST 2025
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:33 PM IST 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:33 PM IST 2025
+Exit Simulator: abnormal
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: error ***
+When: Thu Jul 31 04:27:34 PM IST 2025
+Simulator Crashed:
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+Outstanding STRAP Requests:
+        strap::get g . -ck
+        strap::get g . -sa
+        strap::get g . -xu
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:34 PM IST 2025
+Connect to Simulator
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:34 PM IST 2025
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Thu Jul 31 04:27:40 PM IST 2025
+SimVision Exit.
+ 
