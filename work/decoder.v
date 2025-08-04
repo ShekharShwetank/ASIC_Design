@@ -1,15 +1,15 @@
 // decoder.v
-module decoder(y,a,rst);
+module decoder(y, a, clk, rst);
     input [2:0]a;
-    input rst;
+    input clk, rst;
     output reg [7:0]y;
-
-    always@(*) begin
+    
+    always@(posedge clk) begin
         if(rst) begin
             y = 8'b0;
         end else begin
             case(a)
-                3'd0: y = 8'd0;
+                3'd0: y = 8'd1; //8'd0 is an issue, doesn't give full toggle coverage;
                 3'd1: y = 8'd2;
                 3'd2: y = 8'd4;
                 3'd3: y = 8'd8;
