@@ -7,7 +7,7 @@ always@(posedge clk)
 		if(rst)
 			q <= 0;
 		else
-			q = q+4'b1;
+			q <= q+4'b1;
 	end
 endmodule
 

@@ -1,0 +1,49 @@
+Tool: NC Launch
+
+script
+
+csh
+source /home/install/cshrc
+
+xrun <rtl_code_filename> < testbenchcode_filename> -access +rwe -gui &
+-access +rwc: provides probing acces to all the signals in the desgin hirerachy
+
+OUTPUT:
+[student@ic312 work]$ xrun four_bitcounter.v four_bitcounter_tb.v -access +rwc -gui &
+[1] 6939
+[student@ic312 work]$ TOOL:	xrun	22.09-s003: Started on Jul 14, 2025 at 09:30:11 IST
+TOOL:	xrun(64)	22.09-s003: Started on Jul 14, 2025 at 09:30:11 IST
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: four_bitcounter.v
+	module worklib.four_bitcounter:v
+		errors: 0, warnings: 0
+file: four_bitcounter_tb.v
+	module worklib.four_bitcounter_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		four_bitcounter_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.four_bitcounter:v <0x7b9b59d2>
+			streams:   2, words:   523
+		worklib.four_bitcounter_tb:v <0x4fe72c48>
+			streams:   4, words:  1552
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        2       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      1       1
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.four_bitcounter_tb:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 

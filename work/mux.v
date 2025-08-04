@@ -1,9 +1,9 @@
 // mux.v
-module mux(a,b,s,rst,y);
-    input a,b,s,rst;
+module mux(a,b,s,clk,rst,y);
+    input a,b,s,clk,rst;
     output reg y;
 
-    always @(*) begin
+    always @(posedge clk or posedge rst) begin
         if(!rst) begin
             y = 1'b0;
         end else begin
