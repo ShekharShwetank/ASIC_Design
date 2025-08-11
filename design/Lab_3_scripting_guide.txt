@@ -19,8 +19,7 @@ library_name: slow.libs
 	write_sdc > <name_sdc.sdc>
 	
 EXAMPLE:
-exit
-set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+gset_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
 set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
 read_libs slow.lib
 read_hdl four_bitcounter.v

@@ -1147,3 +1147,10 @@ WARNING: This version of the tool is 1137 days old.
 Saving Preference File /home/student/.cadence/genus/gui_sch.pref.tcl
 @genus:root: 2> 
 @genus:root: 2> genus -f sync_HA_script.tcl
+
+Lic Summary:
+[09:45:55.361434] Cdslmd servers: cadence-c2s
+[09:45:55.361440] Feature usage summary:
+[09:45:55.361440] Genus_Synthesis
+
+Normal exit.
