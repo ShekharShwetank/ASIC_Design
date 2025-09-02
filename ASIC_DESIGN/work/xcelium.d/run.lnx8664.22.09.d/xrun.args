@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+four_bitcounter.v
+four_bitcounter_tb.v
+-access
++rwc
+-gui

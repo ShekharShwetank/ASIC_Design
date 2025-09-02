@@ -1,0 +1,101 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:33:08.328618] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files sync_FA_script_dft.tcl 
+Date:    Tue Sep 02 16:33:08 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402344KB)
+PID:     31972
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[16:33:09.174064] Periodic Lic check successful
+[16:33:09.174083] Feature usage summary:
+[16:33:09.174083] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Using chipware dir from user defined $CW_DIR environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware
+Using chipware simulation model dir from user defined $CW_DIR_SIM environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware/sim
+
+Finished loading tool scripts (3 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source sync_FA_script_dft.tcl
+#@ Begin verbose source ./sync_FA_script_dft.tcl
+@file(sync_FA_script_dft.tcl) 1: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(sync_FA_script_dft.tcl) 2: set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+@file(sync_FA_script_dft.tcl) 3: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(sync_FA_script_dft.tcl) 4: read_hdl sync_FA.v #change
+Warning : Cannot open file. [VLOGPT-650]
+        : File '#change'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(sync_FA_script_dft.tcl) 5: elaborate
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'sync_FA' from file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/sync_FA.v'.
+Warning : In legacy_ui mode, Genus creates a blackbox as description for a module is not found. Black boxes represent unresolved references in the design and are usually not expected. Another possible reason is, some libraries are not read and the tool could not get the content for some macros or lib_cells. [CDFG-428]
+        : A blackbox was created for instance 'ha1' in file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/sync_FA.v' on line 13.
+        : Check the kind of module a black box is. If it is a lib_cell or a macro, check why the corresponding .lib was not read in. This could be either due to a missing or faulty file or due to an incomplete init_lib_search_path attribute value making restricting access to the missing file. If it is a module of your design, verify whether the path to this module is a part of the files you read or else check that the init_hdl_search_path attribute is not missing some paths.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'sync_FA'.
+Warning : Black-boxes are represented as unresolved references in the design. [TUI-273]
+        : Cannot resolve reference to 'sync_HA'.
+        : Run check_design to get all unresolved instance. To resolve the reference, either load a technology library containing the cell by appending to the 'library' attribute, or read in the hdl file containing the module before performing elaboration. As the design is incomplete, synthesis results may not correspond to the entire design.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: sync_FA, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: sync_FA, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+---------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |         0.00 | 
+| hlo_clip           |       0 |       0 |         0.00 | 
+---------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(sync_FA_script_dft.tcl) 6: read_sdc sync_FA_sdc.g #change
+Error: Unable to open #change
+#@ End verbose source ./sync_FA_script_dft.tcl
+Failed on read_sdc
+Encountered problems processing file: sync_FA_script_dft.tcl
+WARNING: This version of the tool is 1167 days old.
+@genus:root: 2> genus -f sync_FA_script_dft.tcl

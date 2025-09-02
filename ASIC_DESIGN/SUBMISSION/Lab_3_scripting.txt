@@ -1,0 +1,44 @@
+1. set_db init_lib_search_path <library path>
+2. set_db init_hdl_search_path <rtl path>
+3. read_libs <library name path>
+4. read_hdl <rtl name path>
+5. elaborate
+6. read_sdc <sdc file name with path IF NOT IN THE SAME PATH>
+
+library_path: /home/install/FOUNDRY/digital/90nm/dig/lib
+rtl_path: /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+library_name: slow.libs
+
+    set_db syn_generic_effort <effort level> ##generic black box
+	set_db syn_map_effort <effort level>  ##mapping the gates in the netlist
+	set_db syn_opt_effort <effort level>  ##optimizing the netlist
+	syn_generic
+	syn_map
+	syn_opt
+	write_hdl > <name_netlist.v>
+	write_sdc > <name_sdc.sdc>
+	
+EXAMPLE:
+gset_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+read_libs slow.lib
+read_hdl four_bitcounter.v
+elaborate
+read_sdc counter_sdc.g
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+syn_generic
+syn_map
+syn_opt
+write_hdl > four_bitcounter_netlist.v
+write_sdc > four_bitcounter_generated_sdc.g
+
+gui_show
+gui_hide -> schematic view
+
+In terminal:
+genus -f <script_file_name.tcl>
+
+layout information in in a file name lef
+

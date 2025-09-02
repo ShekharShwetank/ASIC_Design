@@ -1,0 +1,33 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[13:02:53.328562] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Mon Aug 11 13:02:53 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402344KB)
+PID:     9484
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[13:02:54.406928] Periodic Lic check successful
+[13:02:54.406936] Feature usage summary:
+[13:02:54.406936] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Using chipware dir from user defined $CW_DIR environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware
+Using chipware simulation model dir from user defined $CW_DIR_SIM environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware/sim
+
+Finished loading tool scripts (4 seconds elapsed).
+
+WARNING: This version of the tool is 1144 days old.
+@genus:root: 1> genus -f mux_script.tcl

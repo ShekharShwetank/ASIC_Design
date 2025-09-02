@@ -1,0 +1,19 @@
+                          CONFORMAL (R)
+                   Version 21.10-s300 (22-Aug-2021) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2021. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1470 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read library /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib -liberty
+// Parsing file /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+// Command: write library slowlib_verilog_generated.v -verilog -replace
+// Note: Wrote VERILOG library successfully
+// Command: exit

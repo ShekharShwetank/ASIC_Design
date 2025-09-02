@@ -1,0 +1,82 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:52:28.328610] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files mux_script.tcl 
+Date:    Mon Aug 11 12:52:28 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402344KB)
+PID:     7632
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[12:52:29.103945] Periodic Lic check successful
+[12:52:29.103953] Feature usage summary:
+[12:52:29.103954] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Using chipware dir from user defined $CW_DIR environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware
+Using chipware simulation model dir from user defined $CW_DIR_SIM environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware/sim
+
+Finished loading tool scripts (3 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source mux_script.tcl
+#@ Begin verbose source ./mux_script.tcl
+@file(mux_script.tcl) 1: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(mux_script.tcl) 2: set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+@file(mux_script.tcl) 3: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(mux_script.tcl) 4: read_hdl mux.v
+        if(!rst) begin
+           |
+Warning : Inconsistent reference of edge signal. [VLOGPT-418]
+        : Wrong polarity for edge signal 'rst' in file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/mux.v' on line 7, column 12.
+        : If the set signal 'set_sig' is a posedge signal, the if statement should use ( set_sig ) as the testing condition.
+e.g.
+    always @(posedge clk or posedge set_sig)
+        if ( set_sig)
+ 
+If the set signal 'set_sig' is a negedge signal, the if statement should use (! set_sig ) as the testing condition.
+e.g.
+    always @(posedge clk or negedge set_sig)
+        if ( ! set_sig).
+@file(mux_script.tcl) 5: elaborate
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'mux' from file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/mux.v'.
+Error   : Unsynthesizable Process. [CDFG-364] [elaborate]
+        : in file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/mux.v' on line 6.
+        : Error during elaboration.
+Info    : Unable to elaborate the design. [ELAB-4]
+        : Module 'mux' contains errors and cannot be elaborated.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./mux_script.tcl
+1
+Encountered problems processing file: mux_script.tcl
+WARNING: This version of the tool is 1144 days old.
+@genus:root: 2> genus -f mux_script.tcl
+@genus:root: 3> csh

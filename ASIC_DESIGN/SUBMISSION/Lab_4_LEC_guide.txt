@@ -1,0 +1,178 @@
+#LEC (LOGIC EQUIVALENCE CHECK)
+
+NOTES:
+WHY LEC & Scan Chains?
+not checked whether any kind of input vector combinations, thus need a test vector, ensuring all test patterns will be tested -> thus use ATPG: Automatic Test Pattern Generation
+scan chains are made of scan flops 
+helps predict the output based on input
+
+tool: conformality
+
+golden design: src code
+revised design: gate lvl netlist generated with dft
+
+syntax: to run in the terminal
+
+lec -XL -nogui -color -64 -dofile <filename>
+
+    -XL: launches Conformal L with Datapath and Advanced equivalence checking capability
+    -nogui: starts the session in non-gui mode. 
+    -color: color coding in non gui mode
+    -64: 64 bit mode
+    -dofile: do file (extension)
+    
+# save log file & replace any existing one with same name:
+ 
+set log file <filename.log> -replace
+        
+# Read verilog lib by entering:
+
+read library <filename> -verilog -both
+
+>> read library <.lib finename> -liberty -both
+>> write library <.v filename> -verilog -replace
+
+    -verilog: indicates that the library is in Verilog format
+    -both: uses same library to model or structure both golden & revised designs.
+    NOTE: both verilog and liberty formats can be used. but the verilog format is prefrred. steps to generate .v from .lib using conformal is mentioned at the end of this design.
+    
+# read the golden design RTL by entering:
+read design <filename> -verilog -golden
+    
+    -verilog indicate that RTL is coded in verilog
+    -golden: inputs the golden design
+    
+# read the revised design by entering:
+read design <filename> -verilog -revised
+
+    -verilog: 
+    -revised: inputs the revised design file
+    
+# ignore the scan input (scan_in) and scan output (scan_out) pins (these aren't present in the golden design)
+add ignored inputs scan_in -revised
+add ignored outputs scan_out -revised
+
+# constraint the scan enable (SE) pin to zero to keep the revised design in functional mode:
+add pin constraints 0 SE -revised
+
+    NOTE: the tool keeps the design in functional mode and ignores the scan_in pin as a support point. also, scan_out is ignored as a compare point.
+    
+# change the mode of operation from "setup" to "lec"
+set system mode lec
+    
+    NOTE: conformal LEC has 2 modes of operation: SETUP and LEC. The setup mode is used to prepare the design to be compared. Any command that affects the way the is modeled.
+    
+# 
+add compare point -all
+compare
+
+report verification
+set gui on
+
+
+STEPS:
+PREREQUISITE:
+1. inside synthesis folder create a <your_filename_script_dft.tcl>
+2A inside <your_filename_script_dft.tcl> include:
+    ```
+    set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+    set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+    read_libs slow.lib
+    read_hdl <your_filename.v> //from the work folder
+    elaborate
+    read_sdc <your_filename_sdc.g> //corresponding *sdc.g file
+
+    ######
+
+    # set the DFT scan ff style for scan replacement
+    set_db dft_scan_style muxed_scan
+
+    # prefix added to the name of DFT logic that is inserted
+    set_db dft_prefix dft_
+
+    # define the test signals, the syntax is define_shift_enable -name {scan_en} -active {high} -create_port {scan_en}
+    define_shift_enable -name SE -active high -create_port SE
+
+    # recommended to check dft rules multiple times during a DFT flow. Check pass means all the registers are eligible for scan connection
+    check_dft_rules
+
+    ######
+
+    set_db syn_generic_effort medium
+    set_db syn_map_effort medium
+    set_db syn_opt_effort medium
+    syn_generic
+    syn_map
+    syn_opt
+
+    ######
+
+    check_dft_rules
+
+    # specify the no. of scan chains required to connect all FFs. Here one scan chain is used. // top module name inserted
+    set_db design:<your_top_module_name> .dft_min_number_of_scan_chains 1
+
+    # specify the scan-in and scan-out ports of the scan chain
+    define_scan_chain -name top_chain -sdi scan_in -sdo scan_out -create_ports
+
+    # connect the scan chains using the connect_scan_chain command. This will include all original FFs that were mapped to scan flops.
+    connect_scan_chains -auto_create_chains
+
+    # Run incremental synthesis
+    syn_opt -incr
+
+    # view the DFT chains
+    report_scan_chains
+
+    # run the final ATPG analysis and vector generation. This step will take the final scan chains and run through the basic ATPG flow. This flow will generate a directory name test_scripts in current working location
+    write_dft_atpg -library /home/install/FOUNDRY/digital/90nm/dig/lib
+
+    # new writes
+    write_hdl > <your_filename_generated_netlist_dft.v>
+    write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge -setuphold split > <your_filename_generated_delays_dft.sdf>
+    write_sdc > <your_filename_generated_sdc_dft.g>
+    write_scandef > <your_filename_generated_scanDEF.scandef>
+
+    #write_hdl > four_bitcounter_netlist.v
+    #write_sdc > four_bitcounter_generated_sdc.g
+    gui_show
+    ```
+    
+// execute the <your_filename_script_dft.tcl>
+genus -f <your_filename_script_dft.tcl>
+
+#####################
+LEC
+#####################
+
+1: go inside your LEC forlder and open in terminal
+2. csh
+3. source /home/install/cshrc
+
+4A. inside <your_library_file_name.do> include:
+    ```
+    set log file lib_v.log -replace
+    read library /home/install/FOUNDRY/digital/90nm/dig/lib/slow.lib -liberty
+    write library slowlib_verilog_generated.v -verilog -replace
+    ```
+4. lec -XL -nogui -dofile <your_library_file_name.do> // here it's slowlib_verilog.do
+5. exit conformality
+
+6A. inside <your_filename.do> include:
+    ```
+    set log file four_bitcounter_generated.log -replace
+    read library /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v -verilog -both
+    read design /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/four_bitcounter.v -verilog -golden
+    read design /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/four_bitcounter_netlist_dft.v -verilog -revised
+    add ignored inputs scan_in -revised
+    add ignored outputs scan_out -revised
+    add pin constraints 0 SE -revised
+    set system mode lec
+    add compare point -all
+    compare
+
+    report verification
+    set gui on
+    ```
+6. lec -Xl -nogui -color -64 -dofile <your_filename.do> here it's one of the 8 designs: e.g. four_bitcounter_lec.do.
+7. exit -> Yes

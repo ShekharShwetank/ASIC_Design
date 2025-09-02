@@ -1,0 +1,41 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:28:31.328586] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files x-special/nautilus-clipboard 
+Date:    Mon Aug 11 12:28:31 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402344KB)
+PID:     4456
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[12:28:32.400714] periodic Lic check successful
+[12:28:32.400715] Feature usage summary:
+[12:28:32.400715] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...Using chipware dir from user defined $CW_DIR environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware
+Using chipware simulation model dir from user defined $CW_DIR_SIM environment variable set to /home/install/GENUS211/tools.lnx86/lib/chipware/sim
+
+Finished loading tool scripts (4 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source x-special/nautilus-clipboard
+File 'x-special/nautilus-clipboard' does not exist.
+Encountered problems processing file: x-special/nautilus-clipboard
+WARNING: This version of the tool is 1144 days old.
+@genus:root: 2> copy
+ambiguous command name "copy": copy_collection copy_library_domain_attributes
+@genus:root: 3> file:///home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/sync_FA_script.tcl
+invalid command name "file:///home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/sync_FA_script.tcl"
+@genus:root: 4> genus -f sync_FA_script.tcl

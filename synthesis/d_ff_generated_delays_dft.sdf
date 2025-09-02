@@ -1,0 +1,23 @@
+(DELAYFILE
+  (SDFVERSION  "OVI 3.0")
+  (DESIGN      "d_ff")
+  (DATE        "Tue Sep 02 17:46:36 IST 2025")
+  (VENDOR      "Cadence, Inc.")
+  (PROGRAM     "Genus(TM) Synthesis Solution")
+  (VERSION     "21.14-s082_1")
+  (DIVIDER     .)
+  (VOLTAGE     ::0.9)
+  (PROCESS     "::1.0")
+  (TEMPERATURE ::125.0)
+  (TIMESCALE   1ns)
+  (CELL
+     (CELLTYPE "INVXL")
+     (INSTANCE g3)
+     (DELAY
+        (ABSOLUTE
+          (PORT A (::0.000))
+          (IOPATH A Y (::0.012) (::0.010))
+        )
+     )
+  )
+)

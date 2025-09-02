@@ -1,0 +1,24 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Jul 14, 2025 at 09:39:13 IST
+xrun
+	four_bitcounter.v
+	four_bitcounter_tb.v
+	-access +rwc
+	-gui
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm four_bitcounter_tb.rst four_bitcounter_tb.q four_bitcounter_tb.clk
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 60 NS + 0
+./four_bitcounter_tb.v:15 		#50 $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	22.09-s003: Exiting on Jul 14, 2025 at 09:45:47 IST  (total: 00:06:34)

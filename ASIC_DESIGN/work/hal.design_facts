@@ -1,0 +1,57 @@
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+
+
+Design facts for top module: sync_FA_tb
+-----------------------------------------
+
+  1. Primary inputs used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Primary Input                    : Flipflops/latches controlled
+     -------------                      ----------------------------
+
+  2. Gated primary input used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Gated primary signal             : Flipflops/latches controlled
+     -------------------                ----------------------------
+
+  3. Internally generated signals used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Internal signal                  : Flipflops/latches controlled
+     -------------                      ----------------------------
+     sync_FA_tb.UUT.clk               : 6 FFs
+
+  4. Primary inputs used as async
+     set/reset
+                                      : **NONE**
+     Primary inputs used as sync
+     set/reset
+                                      : **NONE**
+
+     Internally generated signals used as async
+     set/reset
+
+  5. Clock-Reset Generators :
+
+  6. Clock/Reset/Set Details :
+
+  7. Physical Blocks Info :
+
+  8. Physical Block Clocks Domain Info :
+
+
+=========================================
+
+Design facts for the complete design:
+-----------------------------------------
+
+  1. Number of tops in hierarchy : 1
+
+  2. Number of single-bit flip-flops in hierarchy : 6
+    -- (i)  Number of single-bit D flip-flops in hierarchy : 6
+    -- (ii) Number of single-bit JK flip-flops in hierarchy : 0
+
+  3. Number of single-bit latches in hierarchy : 0

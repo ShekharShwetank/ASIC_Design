@@ -1,0 +1,334 @@
+hal(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/cds.lib -logfile hal.log worklib.sync_FA_tb:module.
+hal: Snapshot:  worklib.sync_FA_tb:module.
+hal: Workspace: /home/student/Desktop/22BEC1204_ASIC_DESIGN/work.
+hal: Date: Mon Jul 28 10:54:48 IST 2025.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+    	begin
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,21|0): HDL source line contains one or more control characters.
+    	   a=0; b=0; cin=0;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,22|0): HDL source line contains one or more control characters.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,23|0): HDL source line contains one or more control characters.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,24|0): HDL source line contains one or more control characters.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,25|0): HDL source line contains one or more control characters.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,26|0): HDL source line contains one or more control characters.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,27|0): HDL source line contains one or more control characters.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,28|0): HDL source line contains one or more control characters.
+    	   #10 a=1; b=1; cin=1;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,29|0): HDL source line contains one or more control characters.
+    	   #10 $finish;
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,30|0): HDL source line contains one or more control characters.
+     	end
+|
+halcheck: *W,CTLCHR (./sync_FA_tb.v,31|0): HDL source line contains one or more control characters.
+module sync_FA_tb();
+|
+halcheck: *W,NEEDIO (./sync_FA_tb.v,1|0): Top-level module 'sync_FA_tb' has no inputs/outputs/inouts.
+module sync_FA_tb();
+|
+halcheck: *W,LCVARN (./sync_FA_tb.v,1|0): Module name 'sync_FA_tb' uses uppercase characters.
+    initial begin
+|
+halcheck: *W,NOBLKN (./sync_FA_tb.v,15|0): Each block should be labeled with a meaningful name.
+        forever #5 clk = ~clk;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,17|0): Use a separate line for each HDL statement.
+    	begin
+|
+halcheck: *W,NOBLKN (./sync_FA_tb.v,21|0): Each block should be labeled with a meaningful name.
+    	   a=0; b=0; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,22|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   a=0; b=0; cin=0;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,22|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   a=0; b=0; cin=0;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,22|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   a=0; b=0; cin=0;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,22|0): Use a separate line for each HDL statement.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,23|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,23|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,23|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,23|0): Use a separate line for each HDL statement.
+    	   #10 a=0; b=0; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,23|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,24|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,24|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,24|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,24|0): Use a separate line for each HDL statement.
+    	   #10 a=0; b=1; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,24|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,25|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,25|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,25|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,25|0): Use a separate line for each HDL statement.
+    	   #10 a=0; b=1; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,25|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,26|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,26|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,26|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,26|0): Use a separate line for each HDL statement.
+    	   #10 a=1; b=0; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,26|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,27|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,27|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,27|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,27|0): Use a separate line for each HDL statement.
+    	   #10 a=1; b=0; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,27|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,28|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,28|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,28|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,28|0): Use a separate line for each HDL statement.
+    	   #10 a=1; b=1; cin=0;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,28|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=1;
+|
+halcheck: *W,IMPDTC (./sync_FA_tb.v,29|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=1;
+|
+halcheck: *W,INTTOB (./sync_FA_tb.v,29|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=1;
+|
+halcheck: *W,TRUNCZ (./sync_FA_tb.v,29|0): Truncation in constant conversion without a loss of bits in module/design-unit sync_FA_tb.
+    	   #10 a=1; b=1; cin=1;
+|
+halcheck: *W,SEPLIN (./sync_FA_tb.v,29|0): Use a separate line for each HDL statement.
+    	   #10 $finish;
+|
+halcheck: *W,BADSYS (./sync_FA_tb.v,30|0): System task $finish in module 'sync_FA_tb' is ignored.
+    sync_FA UUT(
+|
+halcheck: *W,LCVARN (./sync_FA_tb.v,6|0): Module instance name 'UUT' uses uppercase characters.
+    sync_FA UUT(
+|
+halcheck: *N,IDLENG (./sync_FA_tb.v,6|0): Identifier name 'UUT' is not of appropriate length (4 to 16 characters).
+// sync_full_adder_1bit - Synchronous 1-bit Full Adder using Synchronous Half Adders
+|
+halcheck: *W,MAXLEN (./sync_FA.v,1|0): The HDL source line is 84 characters, which exceeds the recommended length of 80 characters.
+    	sum <= sum_w;
+|
+halcheck: *W,CTLCHR (./sync_FA.v,30|0): HDL source line contains one or more control characters.
+module sync_FA(
+|
+halcheck: *N,PRTCNT (./sync_FA.v,2|0): Module/Entity 'sync_FA' contains '6' ports.
+halcheck: (./sync_FA.v,2): Number of Input ports: 4.
+halcheck: (./sync_FA.v,2): Number of Output ports: 2.
+module sync_FA(
+|
+halcheck: *W,LCVARN (./sync_FA.v,2|0): Module name 'sync_FA' uses uppercase characters.
+    always @(posedge clk) begin
+|
+halcheck: *W,NOBLKN (./sync_FA.v,29|0): Each block should be labeled with a meaningful name.
+    sync_HA ha1 (
+|
+halcheck: *N,IDLENG (./sync_FA.v,13|0): Identifier name 'ha1' is not of appropriate length (4 to 16 characters).
+	input a,b,clk;
+|
+halcheck: *W,CTLCHR (./sync_HA.v,2|0): HDL source line contains one or more control characters.
+	output reg sum, c_out;
+|
+halcheck: *W,CTLCHR (./sync_HA.v,3|0): HDL source line contains one or more control characters.
+module sync_HA(a,b,clk,sum,c_out);
+|
+halcheck: *N,PRTCNT (./sync_HA.v,1|0): Module/Entity 'sync_HA' contains '5' ports.
+halcheck: (./sync_HA.v,1): Number of Input ports: 3.
+halcheck: (./sync_HA.v,1): Number of Output ports: 2.
+module sync_HA(a,b,clk,sum,c_out);
+|
+halcheck: *W,LCVARN (./sync_HA.v,1|0): Module name 'sync_HA' uses uppercase characters.
+	input a,b,clk;
+|
+halcheck: *N,DECLIN (./sync_HA.v,2|0): Use a separate line for each HDL declaration.
+	output reg sum, c_out;
+|
+halcheck: *N,DECLIN (./sync_HA.v,3|0): Use a separate line for each HDL declaration.
+   begin
+|
+halcheck: *W,NOBLKN (./sync_HA.v,6|0): Each block should be labeled with a meaningful name.
+    sync_HA ha2 (
+|
+halcheck: *N,IDLENG (./sync_FA.v,21|0): Identifier name 'ha2' is not of appropriate length (4 to 16 characters).
+    wire sum, cout;
+|
+halcheck: *W,URDWIR (./sync_FA_tb.v,4|0): Wire 'sum' defined in module 'sync_FA_tb' does not drive any object, but is assigned at least once.
+    wire sum, cout;
+|
+halcheck: *W,URDWIR (./sync_FA_tb.v,4|0): Wire 'cout' defined in module 'sync_FA_tb' does not drive any object, but is assigned at least once.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 66.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.s086..-(): (c) Copyright 1995 - 2020 Cadence Design Systems, Inc.
+cfe64 Build : Mon Dec  7 22:53:08 IST 2020 ldvopt223
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+    initial begin
+|
+halsynth: *W,INIUSP (./sync_FA_tb.v,15|0): Module sync_FA_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+    initial 
+|
+halsynth: *W,INIUSP (./sync_FA_tb.v,20|0): Module sync_FA_tb has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 2.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+visadev(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+    sync_FA UUT(
+|
+halstruct: *E,UNCONI (./sync_FA_tb.v,6|0): Input port 'a' of entity/module 'sync_FA' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+halstruct: (./sync_FA_tb.v,6): 'a' mapped to actual expression 'a' which is undriven.
+    sync_FA UUT(
+|
+halstruct: *E,UNCONI (./sync_FA_tb.v,6|0): Input port 'b' of entity/module 'sync_FA' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+halstruct: (./sync_FA_tb.v,6): 'b' mapped to actual expression 'b' which is undriven.
+    sync_FA UUT(
+|
+halstruct: *E,UNCONI (./sync_FA_tb.v,6|0): Input port 'cin' of entity/module 'sync_FA' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+halstruct: (./sync_FA_tb.v,6): 'cin' mapped to actual expression 'cin' which is undriven.
+    sync_FA UUT(
+|
+halstruct: *E,UNCONI (./sync_FA_tb.v,6|0): Input port 'clk' of entity/module 'sync_FA' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+halstruct: (./sync_FA_tb.v,6): 'clk' mapped to actual expression 'clk' which is undriven.
+    sync_FA UUT(
+|
+halstruct: *W,UNCONO (./sync_FA_tb.v,6|0): Port 'sum' (which is being used as an output) of entity/module 'sync_FA' is being driven inside the design, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+    sync_FA UUT(
+|
+halstruct: *W,UNCONO (./sync_FA_tb.v,6|0): Port 'cout' (which is being used as an output) of entity/module 'sync_FA' is being driven inside the design, but not connected (either partially or completely) in its instance 'sync_FA_tb.UUT'.
+    	sum <= sum_w;
+|
+halstruct: *W,FFWNSR (./sync_FA.v,30|0): Flip-flop 'sum' does not have any set or reset.
+    input clk,
+|
+halstruct: *N,CLKINF (./sync_FA.v,6|0): Signal 'sync_FA_tb.UUT.clk' was inferred as clock.
+halstruct: (./sync_FA.v,6): Clock source is signal 'sync_FA_tb.UUT.clk'.
+halstruct: (./sync_FA.v,30): Drives the flip-flop 'sync_FA_tb.UUT.sum'.
+    	sum <= sum_w;
+|
+halstruct: *W,CLKNPI (./sync_FA.v,30|0): Flip-flop 'sync_FA_tb.UUT.sum' has clock 'clk' which is not derived from primary input.
+halstruct: (./sync_FA_tb.v,3): Derived from local variable 'clk'.
+        cout <= c1_wire | c2_wire;
+|
+halstruct: *W,FFWNSR (./sync_FA.v,31|0): Flip-flop 'cout' does not have any set or reset.
+      sum<=a^b;
+|
+halstruct: *W,FFWNSR (./sync_HA.v,7|0): Flip-flop 'sum' does not have any set or reset.
+      c_out<=a&b;
+|
+halstruct: *W,FFWNSR (./sync_HA.v,8|0): Flip-flop 'c_out' does not have any set or reset.
+module sync_FA_tb();
+|
+halstruct: *N,NUMDFF (./sync_FA_tb.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 6.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 4.
+halstruct: Total warnings = 7.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (4)
+  UNCONI (4)     
+
+ Warnings : (75)
+  BADSYS (1)      CLKNPI (1)      CTLCHR (14)     FFWNSR (4)     
+  IMPDTC (14)     INIUSP (2)      INTTOB (8)      LCVARN (4)     
+  MAXLEN (1)      NEEDIO (1)      NOBLKN (4)      SEPLIN (9)     
+  TRUNCZ (8)      UNCONO (2)      URDWIR (2)     
+
+ Notes    : (9)
+  CLKINF (1)      DECLIN (2)      IDLENG (3)      NUMDFF (1)     
+  PRTCNT (2)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

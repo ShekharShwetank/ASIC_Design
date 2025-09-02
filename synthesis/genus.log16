@@ -1,0 +1,31 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[08:45:22.328618] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Mon Aug 25 08:45:22 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402340KB)
+PID:     4790
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[08:45:23.095888] Periodic Lic check successful
+[08:45:23.095888] Feature usage summary:
+[08:45:23.095889] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 1158 days old.
+@genus:root: 1> genus -f four_bitcounter_script_dft.tcl

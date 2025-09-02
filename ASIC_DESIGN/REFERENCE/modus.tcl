@@ -1,0 +1,38 @@
+# 1. To build the model, enter: build_model -workdir <directory> -designsource <netlist> -techlib <techlib_files_or_directories> -designtop <top_level_cell>
+build_model -workdir /home/student/Desktop/L1L2_ASICDesign/work -designsource counter4bit.test_netlist.v -techlib /home/student/Desktop/L1L2_ASICDesign/Equivalence_Checking/slow.v -designtop counter4bit
+#where: -designsource is used to specify the top-level design netlist.
+# -designtop is used to specify the module definition to model as the Design Under Test (DUT).
+# -workdir is used to specify the work directory for the run. When Modus Tcl Console is launched, workdir automatically gets set to the directory from where tool is launched. So, specifying -workdir is optional for an user.
+
+#2. To build test mode, enter: build_testmode -workdir <directory> -testmode <name> -assignfile <filename>
+build_testmode -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN -assignfile counter4bit.FULLSCAN.pinassign                                          
+#where: -testmode is used to specify a name to identify the test mode. FULLSCAN is a test mode where the design uses full scan (no compression) and is suitable for performing static ATPG, timed delay testing, and diagnostics.
+# -assignfile is used to specify test function assignments and other design specific information.
+
+#3. To verify test structures, enter: verify_test_structures -workdir <directory> -testmode <name>
+verify_test_structures -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN
+
+#4. To report test structures, enter: report_test_structures -workdir <directory> -testmode <name>
+report_test_structures -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN 
+
+#5. To build fault model, enter: build_faultmodel -workdir <directory> -fullfault yes|no
+build_faultmodel -workdir /home/student/Desktop/L1L2_ASICDesign/work -fullfault yes
+#where: -fullfault yes creates faults for pins on primitives within the technology library cells. The default behaviour (if fullfault is not specified) is that only the top-level cells will have faults associated with their pins.
+
+#6. To create scan test, enter: create_scanchain_tests -workdir < directory > - testmode < testmode > -experiment < exp_name >
+create_scanchain_tests -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN -experiment scan 
+
+#7. To create logic test, enter: create_logic_tests -workdir < directory > - testmode < testmode > -experiment < exp_name > -effort low|high
+create_logic_tests -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN -experiment logic -effort high
+#where: -experiment identifies a name to be associated with the output of a test generation or simulation process. The name can be any string that is meaningful to the user. It is used to identify the set of tests in later processing.
+
+#8. To write out vectors, enter: write_vectors -workdir <directory> -testmode <testmode> [-inexperiment <exp_nam>] [-language <stil|wgl|verilog|tdl>][-scanformat <serial|parallel>] -outputfilename <string>
+write_vectors -workdir /home/student/Desktop/L1L2_ASICDesign/work -testmode FULLSCAN -inexperiment logic -language verilog -scanformat serial -outputfilename test_results
+#where: -inexperiment option identifies the data that is to be processed. The name specified is the name that was used for the -experiment option in the program that created the data. If the option is not specified, the input data must have been previously processed with commit_tests (commit_tests is used to save the logic test experiment created by the create_logic_tests command).
+# -language specifies the converted pattern language format. If not specified, the default is verilog.
+# -outputfilename changes the default output filename.
+# -scanformat is used to specify the format of the scan in the output vectors.
+# specify "serial" to obtain an expanded scan format where values are applied to scanin signal pins and measured at scanout signal pins. The values are shifted through the scan chains by pulsing the shift clocks.
+# specify "parallel" to obtain a format where scan values are applied directly to and measured directly at the scan registers without actually shifting the values through the scan chains. This format reduces simulation time, but the vectors cannot be applied at a tester.
+# the default is "parallel" when the "language" option is set to "tdl".
+# the default is "serial" for all other languages.
