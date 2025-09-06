@@ -31,10 +31,10 @@ file delete -force $WORKDIR/testresults;                  # Delete Test Output F
 # BUILD THE LOGIC MODEL
 #-------------------------------------------------------------------------------
 build_model \
-    -cell	 d_ff \
+    -cell	 simple_processor \
     -techlib	 /home/install/FOUNDRY/digital/90nm/dig/lib \
-    -designsource	 $WORKDIR/d_ff.test_netlist.v \
-    -allowmissingmodules	 yes \
+    -designsource	 $WORKDIR/simple_processor.test_netlist.v \
+    -allowmissingmodules	 no \
     -messagecounteach	 100 \
 
 check_log log_build_model
@@ -43,31 +43,29 @@ check_log log_build_model
 # BUILD THE TEST MODEL
 #-------------------------------------------------------------------------------
 build_testmode \
-    -testmode	 ASSUMED \
-    -assignfile	 $WORKDIR/d_ff.ASSUMED.pinassign \
-    -modedef	 test.modedef \
-    -modedefpath	 $WORKDIR \
-    -excludelatchfile	 $WORKDIR/test.exclude \
+    -testmode	 FULLSCAN \
+    -assignfile	 $WORKDIR/simple_processor.FULLSCAN.pinassign \
+    -modedef	 FULLSCAN \
  
-check_log log_build_testmode_ASSUMED
+check_log log_build_testmode_FULLSCAN
  
 #-------------------------------------------------------------------------------
 # REPORT THE TEST MODEL
 #-------------------------------------------------------------------------------
 report_test_structures \
-    -testmode	 ASSUMED \
+    -testmode	 FULLSCAN \
     -reportscanchain	 all \
  
-check_log log_report_test_structures_ASSUMED
+check_log log_report_test_structures_FULLSCAN
  
 #-------------------------------------------------------------------------------
 # VERIFY THE TEST MODEL
 #-------------------------------------------------------------------------------
 verify_test_structures \
     -messagecount	 TSV-016=10,TSV-024=10,TSV-315=10,TSV-027=10 \
-    -testmode	 ASSUMED \
+    -testmode	 FULLSCAN \
  
-check_log log_verify_test_structures_ASSUMED
+check_log log_verify_test_structures_FULLSCAN
  
 #-------------------------------------------------------------------------------
 # BUILD THE FAULT MODEL
@@ -81,18 +79,36 @@ check_log log_build_faultmodel
 # ATPG - TEST GENERATION
 #-------------------------------------------------------------------------------
 create_logic_tests \
-    -experiment	 d_ff_atpg \
-    -testmode	 ASSUMED \
+    -experiment	 simple_processor_atpg \
+    -testmode	 FULLSCAN \
 
-check_log log_create_logic_tests_ASSUMED_d_ff_atpg
+check_log log_create_logic_tests_FULLSCAN_simple_processor_atpg
 
 #-------------------------------------------------------------------------------
-# ATPG - Report Vectors
+# ATPG - Report the Scan and Capture Switching
 #-------------------------------------------------------------------------------
-report_vectors \
-    -experiment	 d_ff_atpg \
-    -testmode	 ASSUMED 
+write_toggle_gram \
+    -experiment	 simple_processor_atpg \
+    -testmode	 FULLSCAN \
 
-check_log log_report_vectors_ASSUMED_d_ff_atpg
+#-------------------------------------------------------------------------------
+# VERILOG VECTORS - For PARALLEL Simulation
+#-------------------------------------------------------------------------------
+write_vectors \
+    -inexperiment	 simple_processor_atpg \
+    -testmode	 FULLSCAN \
+    -language	 verilog \
+    -scanformat	 parallel \
+
+check_log log_write_vectors_FULLSCAN_simple_processor_atpg
+
+#-------------------------------------------------------------------------------
+# ATPG - Save Experiment to the Master Database for the Testmode
+#-------------------------------------------------------------------------------
+commit_tests \
+    -inexperiment	 simple_processor_atpg \
+    -testmode	 FULLSCAN 
+
+check_log log_commit_tests_FULLSCAN_simple_processor_atpg
 
 exit

@@ -1,0 +1,535 @@
+#Version: 21.10-s300 (22-Aug-2021) (64 bit executable)
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+#Gui Step(0)===>(TixHList).a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist <Button-1> {{indicator {{4 primitives}}}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 0:  (TixHList) <Button-1>\
+ {indicator {{4 primitives}}}} .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist } 
+set x [guiGetIndicatorCoorX .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist {sync_HA4 primitives}];set y [guiGetIndicatorCoorY .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist {sync_HA4 primitives}] 
+_tixRecordFlags <ButtonPress-1> % 10929 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 8208 623935 ?? 27 25 ?? ?? 0 ?? ?? 0x000758 00000000 4 .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 296 259; 
+	 tixHList:Button-1 .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist  $x $y ""
+    ; _tixDeleteFlags;
+#Gui Step(1)===>(TixHList).a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist <ButtonRelease-1> {{indicator {{4 primitives}}}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 1:  (TixHList) <ButtonRelease-1>\
+ {indicator {{4 primitives}}}} .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist } 
+set x [guiGetIndicatorCoorX .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist {sync_HA4 primitives}];set y [guiGetIndicatorCoorY .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist {sync_HA4 primitives}] 
+_tixRecordFlags <ButtonRelease-1> % 10997 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 8464 624015 ?? 27 25 ?? ?? 0 ?? ?? 0x000758 00000000 5 .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 296 259; 
+	 tixHList:ButtonRelease-1 .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist  $x $y
+    ; _tixDeleteFlags;
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+#Gui Step(2)===>(TixHList).a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist <Button-1> {{indicator {{3 library cells and 1 primitives}}}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 2:  (TixHList) <Button-1>\
+ {indicator {{3 library cells and 1 primitives}}}} .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist } 
+set x [guiGetIndicatorCoorX .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist {sync_HA3 library cells and 1 primitives}];set y [guiGetIndicatorCoorY .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist {sync_HA3 library cells and 1 primitives}] 
+_tixRecordFlags <ButtonPress-1> % 12244 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 8208 625887 ?? 29 23 ?? ?? 0 ?? ?? 0x000758 00000000 4 .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 843 257; 
+	 tixHList:Button-1 .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist  $x $y ""
+    ; _tixDeleteFlags;
+#Gui Step(3)===>(TixHList).a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist <ButtonRelease-1> {{indicator {{3 library cells and 1 primitives}}}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 3:  (TixHList) <ButtonRelease-1>\
+ {indicator {{3 library cells and 1 primitives}}}} .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist } 
+set x [guiGetIndicatorCoorX .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist {sync_HA3 library cells and 1 primitives}];set y [guiGetIndicatorCoorY .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist {sync_HA3 library cells and 1 primitives}] 
+_tixRecordFlags <ButtonRelease-1> % 12356 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 8464 625959 ?? 29 23 ?? ?? 0 ?? ?? 0x000758 00000000 5 .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 843 257; 
+	 tixHList:ButtonRelease-1 .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist  $x $y
+    ; _tixDeleteFlags;
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+#Gui Step(4)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <Button-1> {{Tool Setup}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 4:  (TixNoteBookFrame) <Button-1>\
+ {Tool Setup}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise tool
+tixNoteBook:MouseDown .a.pane.f1.middle.nb 193 14
+#Gui Step(5)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <ButtonRelease-1> {{Tool Setup}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 5:  (TixNoteBookFrame) <ButtonRelease-1>\
+ {Tool Setup}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise tool
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.tool
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.tool
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.tool
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.btn 80 30 971 143 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.hdl.btn 80 30 929 143 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.flatten.btn 80 30 971 143 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb 1088 406 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.tool
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.vbar 13 316 948 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w 948 316 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t1 202 24 244 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t1_1 202 24 446 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t2 202 24 244 50 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t2_1 202 24 446 50 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t3 202 24 244 74 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t3_1 202 24 446 74 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t4 202 24 244 98 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t4_1 202 24 446 98 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t5 202 24 244 122 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t5_1 202 24 446 122 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6 202 24 244 146 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1 202 24 446 146 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t7 202 24 244 170 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t7_1 202 24 446 170 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8 202 24 244 194 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8_1 202 24 446 194 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9 202 24 244 218 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9_1 202 24 446 218 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10 202 24 244 242 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10_1 202 24 446 242 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11 103 20 293 268 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11_1 103 20 495 268 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12 202 24 244 290 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1 202 24 446 290 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t1_1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t2.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t2_1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t3.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t3_1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t4.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t4_1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t5.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t5_1.opt0 202 23 0 0 
+_tixRecordFlags <Configure> % 15961 00000000 ?? ?? ?? ?? 24 ?? ?? 0 ?? ?? ?? 202 0 0 ?? 0 0 ?? ?? ?? ?? 22 .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1 ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1
+    ; _tixDeleteFlags;
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1 202 24 0 0 
+_tixRecordFlags <Configure> % 15967 00000000 ?? ?? ?? ?? 24 ?? ?? 0 ?? ?? ?? 202 0 0 ?? 0 0 ?? ?? ?? ?? 22 .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1 ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1
+    ; _tixDeleteFlags;
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1 202 24 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t7.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t7_1.opt0 202 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8_1.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t8_1.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9_1.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t9_1.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10_1.opt0 101 23 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t10_1.opt1 101 23 101 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11.r1 51 20 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11.r2 52 20 51 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11_1.r1 51 20 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t11_1.r2 52 20 51 0 
+_tixRecordFlags <Configure> % 16073 00000000 ?? ?? ?? ?? 24 ?? ?? 0 ?? ?? ?? 202 0 0 ?? 0 0 ?? ?? ?? ?? 22 .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1 ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1
+    ; _tixDeleteFlags;
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1 202 24 0 0 
+_tixRecordFlags <Configure> % 16079 00000000 ?? ?? ?? ?? 24 ?? ?? 0 ?? ?? ?? 202 0 0 ?? 0 0 ?? ?? ?? ?? 22 .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1 ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1
+    ; _tixDeleteFlags;
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1 202 24 0 0 
+ guiWinConfig .a.pane.f1 1108 465 0 0 
+ guiWinConfig .a.pane.f2 1108 279 0 465 
+ guiWinConfig .a.pane.f3 1108 83 0 744 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1.label 1 22 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1.frame 199 22 2 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1.label 1 22 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1.frame 199 22 2 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1.label 1 22 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1.frame 199 22 2 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1.label 1 22 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1.frame 199 22 2 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1.frame.arrow 19 22 179 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6.opt1.frame.entry 176 22 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1.frame.arrow 19 22 179 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t6_1.opt1.frame.entry 176 22 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1.frame.arrow 19 22 179 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12.opt1.frame.entry 176 22 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1.frame.arrow 19 22 179 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.tool.nb.nbframe.naming.w.t12_1.opt1.frame.entry 176 22 1 0 
+#Gui Step(6)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <Button-1> Library
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 6:  (TixNoteBookFrame) <Button-1>\
+ Library} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise library
+#Gui Step(7)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <ButtonRelease-1> Library
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 7:  (TixNoteBookFrame) <ButtonRelease-1>\
+ Library} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise library
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.library
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden 545 408 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised 545 408 545 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.library
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm1 545 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm 541 375 2 31 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm1 545 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm 541 375 2 31 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm1.label 55 21 245 4 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm.tree 539 373 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm1.label 60 21 242 4 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm.tree 539 373 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm.tree.f1 539 373 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm.tree.f1 539 373 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.golden.fm.tree.f1.hlist 533 367 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.library.revised.fm.tree.f1.hlist 533 367 3 3 
+#Gui Step(8)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <Button-1> {{Design Data}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 8:  (TixNoteBookFrame) <Button-1>\
+ {Design Data}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise design
+#Gui Step(9)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <ButtonRelease-1> {{Design Data}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 9:  (TixNoteBookFrame) <ButtonRelease-1>\
+ {Design Data}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise design
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.design
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1 343 404 2 2 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw2 739 404 349 2 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.design
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g 343 202 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r 343 202 0 202 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw2.lab 723 22 8 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw2.f 554 316 92 22 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.lab 343 22 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 343 180 0 22 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.lab 343 22 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 343 180 0 22 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw2.f.vbar 13 316 541 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw2.f.w 541 316 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 330 167 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 167 330 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 330 13 0 167 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 330 167 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 167 330 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 330 13 0 167 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 343 167 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 343 13 0 167 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 343 167 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 343 13 0 167 
+#Gui Step(10)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <Button-1> {{Rule Checking}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 10:  (TixNoteBookFrame) <Button-1>\
+ {Rule Checking}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise rule
+#Gui Step(11)===>(TixNoteBookFrame).a.pane.f1.middle.nb.nbframe <ButtonRelease-1> {{Rule Checking}}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 11:  (TixNoteBookFrame) <ButtonRelease-1>\
+ {Rule Checking}} .a.pane.f1.middle.nb.nbframe } 
+.a.pane.f1.middle.nb raise rule
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.find 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb 1088 406 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup 1072 95 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info 1072 64 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb 1070 1 1 65 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf 1072 28 0 67 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt 535 57 2 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum 471 62 541 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.lab 49 22 0 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.ent 567 23 54 2 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.find 26 26 628 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.chk 412 20 658 4 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om 323 29 5 23 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.lab0 29 22 332 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.lab1 75 22 365 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.ent 86 23 444 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum.lab1 94 22 11 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum.lab2 84 21 121 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum.lab3 139 22 221 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.sum.lab4 84 21 376 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.label 90 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame 233 29 90 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame.menubutton 233 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb 1070 29 1 65 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup 1072 351 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb 1070 262 1 65 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf 1072 23 0 328 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.lab 49 22 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.ent 567 21 54 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.find 26 21 628 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.findf.chk 412 20 658 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1 1108 465 0 0 
+ guiWinConfig .a.pane.f2 1108 279 0 465 
+ guiWinConfig .a.pane.f3 1108 83 0 744 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.rtl 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.udp.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.verilog 1054 191 8 63 
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.hierarchy.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.spice.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.ignored 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe 1070 262 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive 1054 191 8 63 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.nb.nbframe.directive.list.f1.hlist 1048 185 3 3 
+     tk::MbEnter .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame.menubutton
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame.menubutton up 413 293
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame.menubutton up 402 280
+     tk::MbLeave .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.hdl.ruleSetup.info.opt.om.frame.menubutton
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.find 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.find 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr 1072 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list.f1 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info 1072 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr 1072 346 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe 1088 406 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling 1072 351 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info 1072 64 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb 1070 246 1 65 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf 1072 34 0 312 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 1106 463 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.rule
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule 1090 408 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt 535 57 8 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum 471 62 559 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe 1070 246 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden 1054 191 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.lab 49 22 0 6 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.ent 564 23 54 5 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.find 32 32 625 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.findf.chk 409 20 661 7 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om 323 29 5 23 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.lab0 29 22 332 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.lab1 75 22 365 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.ent 86 23 444 26 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum.lab1 94 22 11 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum.lab2 84 21 121 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum.lab3 139 22 221 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.sum.lab4 84 21 376 29 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.label 90 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame 233 29 90 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton 233 29 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden.list.f1.hlist 1048 185 3 3 
+     tk::MbEnter .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 395 275
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 397 280
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 400 288
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 403 295
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 404 300
+     tk::MbMotion .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton up 405 303
+     tk::MbLeave .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.info.opt.om.frame.menubutton
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised 1054 191 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe 1070 246 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised 1054 191 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list.f1 1054 191 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.revised.list.f1.hlist 1048 185 3 3 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden 1054 191 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe 1070 246 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.rule.nb.nbframe.modeling.modelRuleMgr.nb.nbframe.golden 1054 191 8 47 

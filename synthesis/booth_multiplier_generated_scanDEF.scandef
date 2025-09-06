@@ -1,0 +1,69 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN booth_multiplier ;
+
+SCANCHAINS 1 ;
+  - top_chain_seg1_clk_rising 
+    + PARTITION p_clk_rising 
+      MAXBITS 52
+    + START PIN scan_in
+    + FLOATING 
+       A_reg[0] ( IN SI ) ( OUT Q ) 
+       A_reg[1] ( IN SI ) ( OUT Q ) 
+       A_reg[2] ( IN SI ) ( OUT Q ) 
+       A_reg[3] ( IN SI ) ( OUT Q ) 
+       A_reg[4] ( IN SI ) ( OUT Q ) 
+       A_reg[5] ( IN SI ) ( OUT Q ) 
+       A_reg[6] ( IN SI ) ( OUT Q ) 
+       A_reg[7] ( IN SI ) ( OUT Q ) 
+       A_reg[8] ( IN SI ) ( OUT Q ) 
+       M_reg[0] ( IN SI ) ( OUT Q ) 
+       M_reg[1] ( IN SI ) ( OUT Q ) 
+       M_reg[2] ( IN SI ) ( OUT Q ) 
+       M_reg[3] ( IN SI ) ( OUT Q ) 
+       M_reg[4] ( IN SI ) ( OUT Q ) 
+       M_reg[5] ( IN SI ) ( OUT Q ) 
+       M_reg[6] ( IN SI ) ( OUT Q ) 
+       M_reg[7] ( IN SI ) ( OUT Q ) 
+       Q_minus_1_reg ( IN SI ) ( OUT Q ) 
+       Q_reg[0] ( IN SI ) ( OUT Q ) 
+       Q_reg[1] ( IN SI ) ( OUT Q ) 
+       Q_reg[2] ( IN SI ) ( OUT Q ) 
+       Q_reg[3] ( IN SI ) ( OUT Q ) 
+       Q_reg[4] ( IN SI ) ( OUT Q ) 
+       Q_reg[5] ( IN SI ) ( OUT Q ) 
+       Q_reg[6] ( IN SI ) ( OUT Q ) 
+       Q_reg[7] ( IN SI ) ( OUT Q ) 
+       Q_reg[8] ( IN SI ) ( OUT Q ) 
+       count_reg[0] ( IN SI ) ( OUT Q ) 
+       count_reg[1] ( IN SI ) ( OUT Q ) 
+       count_reg[2] ( IN SI ) ( OUT Q ) 
+       count_reg[3] ( IN SI ) ( OUT Q ) 
+       count_reg[4] ( IN SI ) ( OUT Q ) 
+       done_reg ( IN SI ) ( OUT Q ) 
+       product_reg[0] ( IN SI ) ( OUT Q ) 
+       product_reg[1] ( IN SI ) ( OUT Q ) 
+       product_reg[2] ( IN SI ) ( OUT Q ) 
+       product_reg[3] ( IN SI ) ( OUT Q ) 
+       product_reg[4] ( IN SI ) ( OUT Q ) 
+       product_reg[5] ( IN SI ) ( OUT Q ) 
+       product_reg[6] ( IN SI ) ( OUT Q ) 
+       product_reg[7] ( IN SI ) ( OUT Q ) 
+       product_reg[8] ( IN SI ) ( OUT Q ) 
+       product_reg[9] ( IN SI ) ( OUT Q ) 
+       product_reg[10] ( IN SI ) ( OUT Q ) 
+       product_reg[11] ( IN SI ) ( OUT Q ) 
+       product_reg[12] ( IN SI ) ( OUT Q ) 
+       product_reg[13] ( IN SI ) ( OUT Q ) 
+       product_reg[14] ( IN SI ) ( OUT Q ) 
+       product_reg[15] ( IN SI ) ( OUT Q ) 
+       state_reg[0] ( IN SI ) ( OUT Q ) 
+       state_reg[1] ( IN SI ) ( OUT Q ) 
+       state_reg[2] ( IN SI ) ( OUT Q ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 

@@ -1,0 +1,70 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:36:16.328634] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files simple_processor_script_dft.tcl 
+Date:    Fri Sep 05 16:36:16 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402340KB)
+PID:     18045
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[16:36:17.101731] Periodic Lic check successful
+[16:36:17.101739] Feature usage summary:
+[16:36:17.101739] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (3 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source simple_processor_script_dft.tcl
+#@ Begin verbose source ./simple_processor_script_dft.tcl
+@file(simple_processor_script_dft.tcl) 1: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(simple_processor_script_dft.tcl) 2: set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+@file(simple_processor_script_dft.tcl) 3: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(simple_processor_script_dft.tcl) 4: read_hdl simple_processor.v
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'simple_processor.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(simple_processor_script_dft.tcl) 5: elaborate
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(simple_processor_script_dft.tcl) 6: read_sdc simple_processor_sdc.g
+#@ End verbose source ./simple_processor_script_dft.tcl
+Design not exist for read_sdc
+Encountered problems processing file: simple_processor_script_dft.tcl
+WARNING: This version of the tool is 1170 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[16:37:58.367282] Cdslmd servers: cadence-c2s
+[16:37:58.367283] Feature usage summary:
+[16:37:58.367283] Genus_Synthesis
+
+Normal exit.

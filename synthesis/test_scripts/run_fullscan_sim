@@ -10,17 +10,17 @@ xrun \
    +access+rwc \
    +xmstatus \
    +xm64bit \
-   +TESTFILE1=$WORKDIR/testresults/verilog/VER.FULLSCAN.seq_det_0010_atpg.data.scan.ex1.ts1.verilog \
-   +TESTFILE2=$WORKDIR/testresults/verilog/VER.FULLSCAN.seq_det_0010_atpg.data.logic.ex1.ts2.verilog \
+   +TESTFILE1=$WORKDIR/testresults/verilog/VER.FULLSCAN.simple_processor_atpg.data.scan.ex1.ts1.verilog \
+   +TESTFILE2=$WORKDIR/testresults/verilog/VER.FULLSCAN.simple_processor_atpg.data.logic.ex1.ts2.verilog \
    +HEARTBEAT \
    +FAILSET \
    +xmtimescale+1ns/1ps \
    +xmoverride_timescale \
    +xmseq_udp_delay+2ps \
    +libext+.v+.V+.z+.Z+.gz \
-   +xmlibdirname+$WORKDIR/Inca_libs_17_44_27 \
+   +xmlibdirname+$WORKDIR/Inca_libs_16_38_22 \
    -l $WORKDIR/ncverilog_FULLSCAN.log \
   -y /home/install/FOUNDRY/digital/90nm/dig/lib \
-$WORKDIR/seq_det_0010.test_netlist.v \
-$WORKDIR/testresults/verilog/VER.FULLSCAN.seq_det_0010_atpg.mainsim.v
+$WORKDIR/simple_processor.test_netlist.v \
+$WORKDIR/testresults/verilog/VER.FULLSCAN.simple_processor_atpg.mainsim.v
 
