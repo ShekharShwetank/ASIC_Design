@@ -5,19 +5,19 @@
 This repository contains the ASIC design flow implementation for digital circuits, RTL simulation to physical design using Cadence tools. The project includes `RTL code`, `testbenches`, `synthesis scripts`, `DFT insertion`, `LEC`, `ATPG`, and `physical design` steps.
 
 Examples:
-1. 4-Stage Pipelined CPU:
+1. `4-Stage Pipelined CPU:`
 To design, verify, and implement the complete RTL-to-GDSII flow for the control logic of a simplified 4-stage pipelined CPU (Fetch, Decode, Execute, Writeback). The design must be in synthesizable Verilog and include stall logic to handle Read-After-Write (RAW) data hazards.
 ![Pipeline CPU](Assets/RTL2GDSII/pipeline_cpu.png)
 
-2. 2R/1W CPU Register File:
+2. `2R/1W CPU Register File:`
 To design, verify, and implement a complete RTL-to-GDSII flow for an 8-register, 32-bit CPU register file. The design must be in synthesizable Verilog and feature two read ports (dual-port read), one write port, a synchronous write operation, and an asynchronous active-low reset.
 ![Register File](Assets/RTL2GDSII/register.png)
 
-3. Multi-Cycle CPU FSM Control Unit:
-Create the synthesizable Verilog-based RTL to design a simple Control Unit (Finite State Machine) in Verilog for a single-cycle CPU executing instructions like LOAD, STORE, ADD, and BRANCH. Include instruction decode logic and a logic for control signals of how they derive for register file, ALU, and memory. Show the functional verification, code coverage and perform the logic equivalence check. Implement the physical design (to extract the output stream file .gds) using GPDK 90nm. 
+3. `Multi-Cycle CPU FSM Control Unit:`
+Create the synthesizable Verilog-based RTL to design a simple Control Unit (Finite State Machine) in Verilog for a single-cycle CPU executing instructions like LOAD, STORE, ADD, and BRANCH. Include instruction decode logic and a logic for control signals of how they derive for register file, ALU, and memory. Show the functional verification, code coverage and perform the logic equivalence check. Implement the physical design (to extract the output stream file .gds) using GPDK 90nm.
 ![FSM Control Unit](Assets/RTL2GDSII/fsm.png)
 
-4. Resource-Shared Datapath:
+4. `Resource-Shared Datapath:`
 Create the synthesizable Verilog-based RTL for a Datapath implementing the operation Z=(A+B)×(C−D). Apply resource sharing optimization between adders and multipliers. Show the functional verification, code coverage and perform the logic equivalence check. Implement the physical design (to extract the output stream file .gds) using GPDK 90nm.
 ![Resource-Shared Datapath](Assets/RTL2GDSII/datapath.png)
 
