@@ -1,0 +1,10 @@
+1752463999 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/four_bitcounter.v
+1762252656 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/pipeline_control.v
+1762260891 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/control_unit_fsm.v
+1762258462 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/register_file.v
+1762252654 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/pipeline_control_tb.v
+1762263393 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/resource_shared_datapath.v
+1762258523 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/register_file_tb.v
+1762263840 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/datapath_tb.v
+1762260928 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/control_unit_fsm_tb.v
+1752464209 /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/four_bitcounter_tb.v

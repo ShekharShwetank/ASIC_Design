@@ -1,0 +1,315 @@
+$date
+    Nov  4, 2025  19:16:53
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s086
+$end
+$timescale
+    1 ps
+$end
+
+$scope module datapath_tb $end
+
+$scope module dut $end
+$var parameter 32 !    DATA_WIDTH  $end
+$var parameter 32 "    TEMP_WIDTH  $end
+$var parameter 32 #    Z_WIDTH  $end
+$var wire      1 $    clk  $end
+$var wire      1 %    rst_n  $end
+$var wire      1 &    start  $end
+$var wire      8 '    A [7:0] $end
+$var wire      8 (    B [7:0] $end
+$var wire      8 )    C [7:0] $end
+$var wire      8 *    D [7:0] $end
+$var wire     18 +    Z [17:0] $end
+$var wire      1 ,    done  $end
+$var parameter  3 -    S_IDLE [2:0] $end
+$var parameter  3 .    S_CALC_ADD [2:0] $end
+$var parameter  3 /    S_CALC_SUB [2:0] $end
+$var parameter  3 0    S_CALC_MULT [2:0] $end
+$var parameter  3 1    S_DONE [2:0] $end
+$var reg       3 2    state [2:0] $end
+$var reg       3 3    next_state [2:0] $end
+$var reg       8 4    a_reg [7:0] $end
+$var reg       8 5    b_reg [7:0] $end
+$var reg       8 6    c_reg [7:0] $end
+$var reg       8 7    d_reg [7:0] $end
+$var reg       9 8    temp1_reg [8:0] $end
+$var reg       9 9    temp2_reg [8:0] $end
+$var reg      18 :    z_reg [17:0] $end
+$var wire      8 ;    alu_in1 [7:0] $end
+$var wire      8 <    alu_in2 [7:0] $end
+$var wire      1 =    alu_sub  $end
+$var wire      9 >    alu_out [8:0] $end
+$var wire     18 ?    mul_out [17:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b100 1
+b11 0
+b10 /
+b1 .
+b0 -
+b10010 #
+b1001 "
+b1000 !
+0$
+0%
+0&
+b0 '
+b0 (
+b0 )
+b0 *
+b0 +
+0,
+b0 2
+b0 3
+b0 4
+b0 5
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+b0 ;
+b0 <
+0=
+b0 >
+b0 ?
+$end
+#5000
+1$
+#10000
+0$
+#15000
+1$
+#20000
+0$
+1%
+#25000
+1$
+#30000
+0$
+#35000
+1&
+b11 *
+b1000 )
+b1010 (
+b101 '
+1$
+b1 3
+b101 4
+b1010 5
+b1000 6
+b11 7
+b1 2
+b10 3
+b1010 <
+b101 ;
+b1111 >
+#40000
+0$
+#45000
+0&
+1$
+b1111 8
+b10 2
+b11 3
+1=
+b11 <
+b1000 ;
+b101 >
+#50000
+0$
+#55000
+1$
+b101 9
+b11 2
+b100 3
+0=
+b1001011 ?
+b1011 >
+#60000
+0$
+#65000
+1$
+b1001011 :
+b100 2
+b0 3
+1,
+b1001011 +
+#70000
+0$
+#75000
+1$
+b0 2
+0,
+#80000
+0$
+#85000
+1&
+b1010 *
+b101 )
+b10 (
+b1010 '
+1$
+b1 3
+b1010 4
+b10 5
+b101 6
+b1010 7
+b1 2
+b10 3
+b10 <
+b1010 ;
+b1100 >
+#90000
+0$
+#95000
+0&
+1$
+b1100 8
+b10 2
+b11 3
+1=
+b1010 <
+b101 ;
+b111100 ?
+b111111011 >
+#100000
+0$
+#105000
+1$
+b111111011 9
+b11 2
+b100 3
+0=
+b111111111111000100 ?
+b1111 >
+#110000
+0$
+#115000
+1$
+b111111111111000100 :
+b100 2
+b0 3
+1,
+b111111111111000100 +
+#120000
+0$
+#125000
+1$
+b0 2
+0,
+#130000
+0$
+#135000
+1&
+b1 *
+b0 )
+b1 (
+b11111111 '
+1$
+b1 3
+b11111111 4
+b1 5
+b0 6
+b1 7
+b1 2
+b10 3
+b1 <
+b11111111 ;
+b0 >
+#140000
+0$
+#145000
+0&
+1$
+b0 8
+b10 2
+b11 3
+1=
+b0 ;
+b0 ?
+b111111111 >
+#150000
+0$
+#155000
+1$
+b111111111 9
+b11 2
+b100 3
+0=
+b1 >
+#160000
+0$
+#165000
+1$
+b0 :
+b100 2
+b0 3
+1,
+b0 +
+#170000
+0$
+#175000
+1$
+b0 2
+0,
+#180000
+0$
+#185000
+1&
+b10101010 *
+b1010101 )
+b1010101 (
+b10101010 '
+1$
+b1 3
+b10101010 4
+b1010101 5
+b1010101 6
+b10101010 7
+b1 2
+b10 3
+b1010101 <
+b10101010 ;
+b111111111 >
+#190000
+0$
+#195000
+0&
+1$
+b111111111 8
+b10 2
+b11 3
+1=
+b10101010 <
+b1010101 ;
+b1 ?
+b10101011 >
+#200000
+0$
+#205000
+1$
+b10101011 9
+b11 2
+b100 3
+0=
+b111111111101010101 ?
+b111111111 >
+#210000
+0$
+#215000
+1$
+b111111111101010101 :
+b100 2
+b0 3
+1,
+b111111111101010101 +
+#220000
+0$
+#225000

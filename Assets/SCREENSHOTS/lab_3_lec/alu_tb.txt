@@ -1,0 +1,128 @@
+module simple_processor_tb;
+
+  reg clk;
+  reg rst_n;
+  reg start;
+  reg op_sel;
+  reg [7:0] in_a;
+  reg [7:0] in_b;
+  wire [7:0] result;
+  wire done;
+
+
+  simple_processor uut (
+    .clk(clk),
+    .rst_n(rst_n),
+    .start(start),
+    .op_sel(op_sel),
+    .in_a(in_a),
+    .in_b(in_b),
+    .result(result),
+    .done(done)
+  );
+
+
+  initial begin
+    clk = 0;
+    forever clk = ~clk;
+  end
+
+
+  initial begin
+    rst_n = 0;
+    start = 0;
+    op_sel = 0;
+    in_a = 0;
+    in_b = 0;
+
+    // Apply reset
+    # 10
+    rst_n = 1;
+    # 10
+
+    start = 1;
+    op_sel = 0; // Addition
+    in_a = 8'd5;
+    in_b = 8'd3;
+    # 10
+    start = 0; // Deassert start after loading
+    # 10
+
+    if (result == 8'd8 && done == 1) begin
+      $display("Test Case 1 PASSED: Result = %d, Done = %b", result, done);
+    end else begin
+      $error("Test Case 1 FAILED: Expected Result = 8, Got Result = %d, Done = %b", result, done);
+    end
+    # 10
+
+    start = 1;
+    op_sel = 1; // Subtraction
+    in_a = 8'd10;
+    in_b = 8'd4;
+    # 10
+    start = 0;
+    # 10
+
+    if (result == 8'd6 && done == 1) begin
+      $display("Test Case 2 PASSED: Result = %d, Done = %b", result, done);
+    end else begin
+      $error("Test Case 2 FAILED: Expected Result = 6, Got Result = %d, Done = %b", result, done);
+    end
+    # 10
+
+    start = 1;
+    op_sel = 0; // Addition
+    in_a = 8'd100;
+    in_b = 8'd50;
+    # 10
+    start = 0;
+    # 10
+
+    if (result == 8'd150 && done == 1) begin
+      $display("Test Case 3 PASSED: Result = %d, Done = %b", result, done);
+    end else begin
+      $error("Test Case 3 FAILED: Expected Result = 150, Got Result = %d, Done = %b", result, done);
+    end
+    # 10
+
+    start = 1;
+    op_sel = 1; // Subtraction
+    in_a = 8'd5;
+    in_b = 8'd10;
+    # 10
+    start = 0;
+    # 10
+
+    if (result == 8'hFB && done == 1) begin // 5 - 10 = -5, which is 251 in unsigned 8-bit or 0xFB
+      $display("Test Case 4 PASSED: Result = %h, Done = %b", result, done);
+    end else begin
+      $error("Test Case 4 FAILED: Expected Result = 0xFB, Got Result = %h, Done = %b", result, done);
+    end
+    # 10
+
+    start = 1; // Trigger a new operation
+    op_sel = 0;
+    in_a = 8'd1;
+    in_b = 8'd1;
+    # 10
+    start = 0;
+    # 10
+
+    if (done == 1) begin
+        $display("Test Case 5 PASSED: Done is high after operation.");
+    end else begin
+        $error("Test Case 5 FAILED: Done is not high after operation.");
+    end
+
+    // Keep running for a bit to see if done goes low as expected
+    # 10
+    if (done == 0) begin
+        $display("Test Case 5 PASSED: Done went low when start was deasserted in DONE state.");
+    end else begin
+        $error("Test Case 5 FAILED: Done remained high when start was deasserted in DONE state.");
+    end
+
+    $finish;
+  end
+
+endmodule

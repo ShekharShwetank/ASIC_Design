@@ -1,0 +1,934 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : -f booth_multiplier_modus.tcl
+Date    : Tue, September 09 18:01:08 2025
+Host    : ic312.vit.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts'. [end TUI_300]
+#@ Processing -files option
+@modus:root:/ 1>  source booth_multiplier_modus.tcl
+#@ Begin verbose source booth_multiplier_modus.tcl
+@file(booth_multiplier_modus.tcl) 1: build_model -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -designsource booth_multiplier.test_netlist.v -techlib /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v -designtop booth_multiplier
+INFO (TUI-772): The command 'build_model' will release the currently acquired resources. Please set the context and circuit state after completion of the command. [end TUI_772] 
+
+Starting Command: build_model 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925180108-711872000 [end TDA_015]
+
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "booth_multiplier.test_netlist.v"
+Search Order  2:  "/home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v"
+
+
+
+Reading Verilog data from booth_multiplier.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+
+Verilog Parser complete - 481 modules, 1605 gates, 2 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+
+
+Number of blocks in the hierarchical model is: 1,798.
+
+Number of technology library cell instances in the hierarchical model is: 184.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          1,798  Blocks                       1,565  Blocks
+          5,694  Pins                         1,565  Nodes
+          3,126  Nets
+
+Primary Inputs:                      Primary Outputs:
+         21  Input Only                        18  Output Only
+          0  Input/Output                       0  Input/Output
+         21  Total Inputs                      18  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        104  Tied to 0                          0  Two-State
+         52  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        156  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+          0  Latches
+
+
+         52  Rising  Edge Flop w/Set and Reset-Dominant Port
+         52  Total Flops
+
+        184  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 1 of 26 cells in this design.
+
+Optimization removed a total of 0 tied Latch Ports.
+Optimization removed a total of 0 non-controlling inputs.
+Optimization removed a total of 52 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          100,907,376  bytes
+
+                      CPU Time =    0:00:00.17
+                  Elapsed Time =    0:00:00.71                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-196): Build Model - Hierarchical Model Build starting:  
+      1 INFO (TEI-197): Build Model - Hierarchical Model Build completed.  
+      1 INFO (TEI-198): Build Model - Flat Model Build starting:  
+      1 INFO (TEI-199): Build Model - Flat Model Build completed.   
+      1 INFO (TEI-200): Build Model - Controller completed.  
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 2: build_testmode -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN -assignfile booth_multiplier.FULLSCAN.pinassign
+Starting Command: build_testmode 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_testmode_FULLSCAN_090925180111-661914000 [end TDA_015]
+
+MODEDEFPATH set to:  /home/install/MODUS201/tools.lnx86/tb/defaults/rules/modedef 
+TDRPATH set to: /home/install/MODUS201/tools.lnx86/tb/defaults/rules/tdr 
+
+Modus Build Test Mode(s) beginning...
+
+   TDR NAME      =  dummy.tdr 
+
+   SCAN_TYPE     =  GSD 
+   BOUNDARY      =  NONE 
+   IN            =  PI 
+   OUT           =  PO 
+
+INFO (TTM-391): A default modeinit sequence will be generated.   [end TTM_391] 
+INFO (TTM-387): A default scanop sequence will be generated.   [end TTM_387] 
+INFO (THM-814): Testmode contains 96.68% active logic,  3.32% inactive logic and  0.00% constraint logic.   [end THM_814] 
+INFO (TTM-357): There are 1 scan chains which are controllable and observable.   [end TTM_357] 
+
+There are no PPIs for Test Mode:  FULLSCAN
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+ Latch Summary for Test Mode:  FULLSCAN
+ Latch Type                #Active   #Inactive       Total
+ ---------------------   ---------   ---------   ---------
+ Test Constraint (TC)            0           0           0 
+ Scan Enable     (SE)            0           0           0 
+ Fixed Value     (FV)            0           0           0 
+ Floating                        0           0           0 
+ Finite State    (FSM)           0           0           0 
+
+INFO (TTM-800): build_testmode has created mode FULLSCAN. [end TTM_800] 
+
+Test Function Pin Information for Test Mode:  FULLSCAN
+-------------------------------------------
+
+          2  SC    (System  Clock)             Pins
+          0  PC    (P Shift Clock)             Pins
+          1  EC    (E Shift Clock)             Pins
+
+          0  OSC   (Oscillator)                Pins
+
+          0  TI    (Test Inhibit)              Pins
+          1  SE    (Scan Enable)               Pins
+          0  CI    (Clock Isolation)           Pins
+          0  OI    (Output Inhibit)            Pins
+
+          1  SI    (Scan Input)                Pins
+          1  SO    (Scan Output)               Pins
+
+  Pin Index    Type Test Function                         Pin Name / Net Name
+  ---------    ---- ----------------------------------    -------------------
+         18      PI  +SC                                  rst_n / rst_n
+          1      PI  -EC  -SC                             clk / clk
+          0      PI  +SE                                  SE / SE
+         19      PI   SI                                  scan_in / scan_in
+         38      PO   SO                                  scan_out / scan_out
+
+
+            Cumulative Time in hours:minutes:seconds:
+                   CPU Time =   0:00:00.05
+               Elapsed Time =   0:00:01.37
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (THM-814): Testmode contains 96.68% active logic,  3.32% inactive logic and  0.00% constraint logic.    
+      1 INFO (TTM-357): There are 1 scan chains which are controllable and observable.    
+      1 INFO (TTM-387): A default scanop sequence will be generated.    
+      1 INFO (TTM-391): A default modeinit sequence will be generated.    
+      1 INFO (TTM-800): build_testmode has created mode FULLSCAN.  
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 3: verify_test_structures -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN
+Starting Command: verify_test_structures 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_verify_test_structures_FULLSCAN_090925180114-086730000 [end TDA_015]
+
+INFO (TSV-900): verify_test_structures processing has started Tue Sep  9 18:01:14 2025    [end TSV_900] 
+------------------- verify_test_structures Process Preview ---------------------
+  apply constraints ...................................... constraints=yes    
+  Print 1 message per source of clock race ............... limitcisource=yes  
+  Print 1 Message per capture of clock race .............. limitcicapture=yes 
+  Check for mutually exclusive gating logic (MEG) ........ megraces=yes       
+  Use raise message severity attributes if they exist .... raisemsgsev=no    
+  Reporting options ...................................... report[option]=yes/no 
+    Process Preview ......................................   preview=yes     
+    Circuit Statistics ...................................   circuit=yes      
+    Message Summary ......................................   summary=yes      
+    Specific Messages ....................................   specific=yes     
+    Tests Status .........................................   status=no       
+    Output File Names and Size ...........................   filestats=yes    
+    Display messages for cloaked objects .................   cloakedobj=no   
+  Rerun verify_test_structures test(s) ................... reruntests=no     
+  Use message suppression attributes if they exist ....... suppressmsg=no    
+  Test selected .......................................... test[option]=yes/no 
+    Analyze test clock control of memory elements ........   testclockusage=yes 
+    Analyze three-state drivers for contention ...........   tsdcontention=yes 
+    Analyze feedback loops and keeper devices ............   feedback=yes 
+    Analyze clock choppers ...............................   clockchopper=yes 
+    Analyze flip-flop and latch scan characteristics .....   latchusage=yes 
+    Analyze explicit fixed value latches .................   explicitfvlatch=yes 
+    Analyze potential clock signal races .................   clocksignalraces=yes 
+    Analyze internal scan chains .........................   internalscanchains=yes 
+
+--------------------Circuit Statistics--------------------
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          1,798  Blocks                       1,565  Blocks
+          5,694  Pins                         1,565  Nodes
+          3,126  Nets
+
+Primary Inputs:                      Primary Outputs:
+         21  Input Only                        18  Output Only
+          0  Input/Output                       0  Input/Output
+         21  Total Inputs                      18  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        104  Tied to 0                          0  Two-State
+         52  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        156  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+          0  Latches
+
+
+         52  Rising  Edge Flop w/Set and Reset-Dominant Port
+         52  Total Flops
+
+        184  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Test Function Pin Information for Test Mode:  FULLSCAN
+-------------------------------------------
+
+          2  SC    (System  Clock)             Pins
+          0  PC    (P Shift Clock)             Pins
+          1  EC    (E Shift Clock)             Pins
+
+          0  OSC   (Oscillator)                Pins
+
+          0  TI    (Test Inhibit)              Pins
+          1  SE    (Scan Enable)               Pins
+          0  CI    (Clock Isolation)           Pins
+          0  OI    (Output Inhibit)            Pins
+
+          1  SI    (Scan Input)                Pins
+          1  SO    (Scan Output)               Pins
+
+  Pin Index    Type Test Function                         Pin Name / Net Name
+  ---------    ---- ----------------------------------    -------------------
+         18      PI  +SC                                  rst_n / rst_n
+          1      PI  -EC  -SC                             clk / clk
+          0      PI  +SE                                  SE / SE
+         19      PI   SI                                  scan_in / scan_in
+         38      PO   SO                                  scan_out / scan_out
+
+  
+   Analyze test clocks' control of memory elements    
+
+Analyze test clocks' control of memory elements process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.06
+  
+   Analyze three-state drivers for contention 
+
+Analyze three-state drivers for contention process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.06
+  
+   Analyze feedback loops and keeper devices          
+
+Analyze feedback loops and keeper devices process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.10
+  
+   Analyze clock choppers                             
+
+Analyze clock choppers process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.13
+  
+   Analyze flip-flop and latch scan characteristics   
+INFO (TSV-068): The length of the longest scan chain is 52 bit positions, which is 100% of the average scan chain length 52 (based on 52 total scan chain bits and 1 valid scan chains).   [end TSV_068] 
+INFO (TSV-378): Scan chain beginning at 'pin scan_in' and ending at 'pin scan_out' is controllable and observable. The length of the scan chain is 52 bit positions.   [end TSV_378] 
+INFO (TSV-567): There are 1 controllable scan chains fed by Scan In (SI) primary inputs.   [end TSV_567] 
+INFO (TSV-568): There are 1 observable scan chains feeding to Scan Out (SO) primary outputs.   [end TSV_568] 
+INFO (TSV-569): There are 0 controllable scan chains fed by on-product Pattern Generator(s).   [end TSV_569] 
+INFO (TSV-570): There are 0 observable scan chains feeding to on-product Multiple-Input Signature Register (MISRs).   [end TSV_570] 
+
+Analyze flip-flop and latch scan characteristics process has completed.
+                             CPU time =  0:00:00.01  Elapsed time =  0:00:00.07
+  
+   Analyze explicit fixed value latches 
+
+Analyze explicit fixed value latches process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.05
+  
+   Analyze potential clock signal races               
+   Check for mutually exclusive gating logic (MEG)    
+
+Analyze potential clock signal races process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.06
+  
+   Analyze internal scan chains 
+
+Analyze channel inputs for validity process has completed.
+                             CPU time =  0:00:00.00  Elapsed time =  0:00:00.08
+
+--------------------File Information----------------------
+          57344 /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/TSVmessageFile.FULLSCAN 
+
+INFO (TSV-908): verify_test_structures processing complete.   [end TSV_908] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,549,888  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:02.08                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:16 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TLM-055): Design Summary
+      1 INFO (TSV-068): The length of the longest scan chain is 52 bit positions, which is 100% of the average scan chain length 52 (based on 52 total scan chain bits and 1 valid scan chains).    
+      1 INFO (TSV-378): Scan chain beginning at 'pin scan_in' and ending at 'pin scan_out' is controllable and observable. The length of the scan chain is 52 bit positions.    
+      1 INFO (TSV-567): There are 1 controllable scan chains fed by Scan In (SI) primary inputs.    
+      1 INFO (TSV-568): There are 1 observable scan chains feeding to Scan Out (SO) primary outputs.    
+      1 INFO (TSV-569): There are 0 controllable scan chains fed by on-product Pattern Generator(s).    
+      1 INFO (TSV-570): There are 0 observable scan chains feeding to on-product Multiple-Input Signature Register (MISRs).    
+      1 INFO (TSV-900): verify_test_structures processing has started Tue Sep  9 18:01:14 2025     
+      1 INFO (TSV-908): verify_test_structures processing complete.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 4: report_test_structures -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN 
+Starting Command: report_test_structures 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_report_test_structures_FULLSCAN_090925180117-236787000 [end TDA_015]
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          1,798  Blocks                       1,565  Blocks
+          5,694  Pins                         1,565  Nodes
+          3,126  Nets
+
+Primary Inputs:                      Primary Outputs:
+         21  Input Only                        18  Output Only
+          0  Input/Output                       0  Input/Output
+         21  Total Inputs                      18  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        104  Tied to 0                          0  Two-State
+         52  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        156  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+          0  Latches
+
+
+         52  Rising  Edge Flop w/Set and Reset-Dominant Port
+         52  Total Flops
+
+        184  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+
+
+Control/Observe Chain Information for Test Mode:  FULLSCAN
+-----------------------------------------------
+
+     1 Control Chains (0 Control Only)
+     1 Observe Chains (0 Observe Only)
+     1 Chains are Control and Observe
+
+  Longest Scan Chain: 52 bits
+  Average Scan Chain Length: 52 bits
+
+
+  Control Chain: 1
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          19/port:scan_in    Pipeline Stages: 0 
+    Load Point Pin Index/Name  19/port:scan_in
+    Length: 52
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 1
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          38/port:scan_out    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  38/port:scan_out
+    Unload Point In Phase with Load Point
+    Length: 52
+    Scan Section: Scan_Section_Sequence
+
+
+Report completed.
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,364,976  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.00                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:18 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 5: build_faultmodel -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -fullfault yes
+INFO (TUI-772): The command 'build_faultmodel' will release the currently acquired resources. Please set the context and circuit state after completion of the command. [end TUI_772] 
+
+Starting Command: build_faultmodel 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_faultmodel_090925180119-611638000 [end TDA_015]
+
+INFO (TFM-099): Build Fault Model started.  [end TFM_099] 
+INFO (TFM-102): Creating faultModel file /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultModel.  [end TFM_102] 
+
+Global Ignored Static Fault Count               104
+Global Ignored Dynamic Fault Count              208
+
+
+                            Global Statistics
+
+                    ATCov  ----------------------- Global Faults --------------------------
+                   Global        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00         3204            0            0            0         3204
+Collapsed Static     0.00         1898            0            0            0         1898
+PI Static            0.00           42            0            0            0           42
+PO Static            0.00           36            0            0            0           36
+
+Total Dynamic        0.00         3712            0            0            0         3712
+Collapsed Dynamic    0.00         2458            0            0            0         2458
+PI Dynamic           0.00           42            0            0            0           42
+PO Dynamic           0.00           36            0            0            0           36
+
+Parametric        
+
+IDDq                 0.00         3204            0                                   3204
+
+
+
+INFO (TFM-103): Creating faultStatus file /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultStatus.  [end TFM_103] 
+
+                           Testmode Statistics: FULLSCAN
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00   0.00         3204            0            0            0         3204         3204            0            0            0         3204
+Collapsed Static     0.00   0.00         1898            0            0            0         1898         1898            0            0            0         1898
+PI Static            0.00   0.00           42            0            0            0           42           42            0            0            0           42
+PO Static            0.00   0.00           36            0            0            0           36           36            0            0            0           36
+
+Total Dynamic        0.00   0.00         3188            0            0            0         3188         3712            0            0            0         3712
+Collapsed Dynamic    0.00   0.00         2142            0            0            0         2142         2458            0            0            0         2458
+PI Dynamic           0.00   0.00           38            0            0            0           38           42            0            0            0           42
+PO Dynamic           0.00   0.00           36            0            0            0           36           36            0            0            0           36
+
+Parametric        
+
+IDDq                 0.00   0.00         3204            0                                   3204         3204            0                                   3204
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+                  %Active      #Faults      #Active    #Inactive
+Total Static       100.00         3204         3204            0
+Collapsed Static   100.00         1898         1898            0
+PI Static          100.00           42           42            0
+PO Static          100.00           36           36            0
+
+Total Dynamic       85.88         3712         3188          524
+Collapsed Dynamic   87.14         2458         2142          316
+PI Dynamic          90.48           42           38            4
+PO Dynamic         100.00           36           36            0
+
+Parametric        
+
+There are 1 test mode(s) defined:
+      FULLSCAN
+
+[end TFM_704]
+INFO (TFM-109): Build Fault Model has completed with highest level severity message of INFO.  [end TFM_109] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,584,096  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.15                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:21 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-099): Build Fault Model started.   
+      1 INFO (TFM-102): Creating faultModel file /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultModel.   
+      1 INFO (TFM-103): Creating faultStatus file /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultStatus.   
+      1 INFO (TFM-109): Build Fault Model has completed with highest level severity message of INFO.   
+      1 INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 6: create_scanchain_tests -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN -experiment scan 
+Starting Command: create_scanchain_tests 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_create_scanchain_tests_FULLSCAN_scan_090925180122-736715000 [end TDA_015]
+
+
+
+****************************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+****************************************************************************************************
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204            0            0            0         3204   0.00   0.00
+Total Dynamic                 3188            0            0            0         3188   0.00   0.00
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204            0            0            0         3204   0.00   0.00
+Total Dynamic                 3712            0            0            0         3712   0.00   0.00
+****************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Scan Test generation                                                   [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1       1412    44.07%   44.07%         1792           00:01.63    [end TDA_220] 
+INFO (TTC-110): Ending Scan Test generation                                                     [end TTC_110] 
+*************************************************************************************************************
+
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204         1415            0            0         1789  44.16  44.16
+Total Dynamic                 3188          838            0            0         2350  26.29  26.29
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204         1415            0            0         1789  44.16  44.16
+Total Dynamic                 3712          838            0            0         2874  22.58  22.58
+****************************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Scan                                           1
+----------------------------------------------------------
+ Total                                          1
+
+(I) File(s) generated (bytes and name):
+
+          69632 /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultStatus.FULLSCAN.scan
+           3948 /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/TBDbin.FULLSCAN.scan
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,372,080  bytes
+
+                      CPU Time =    0:00:00.02
+                  Elapsed Time =    0:00:01.95                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:24 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      3 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -   
+      2 INFO (TTC-110): Starting Scan Test generation                                                    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 7: create_logic_tests -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN -experiment logic -effort high
+Starting Command: create_logic_tests 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_create_logic_tests_FULLSCAN_logic_090925180125-986535000 [end TDA_015]
+
+
+
+****************************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+****************************************************************************************************
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204            0            0            0         3204   0.00   0.00
+Total Dynamic                 3188            0            0            0         3188   0.00   0.00
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204            0            0            0         3204   0.00   0.00
+Total Dynamic                 3712            0            0            0         3712   0.00   0.00
+****************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Scan Test generation                                                   [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1       1412    44.07%   44.07%         1792           00:00.67    [end TDA_220] 
+INFO (TTC-110): Ending Scan Test generation                                                     [end TTC_110] 
+*************************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Reset/Set Test Generation                                              [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1        105    47.35%   47.35%         1687           00:00.67    [end TDA_220] 
+INFO (TTC-110): Ending Reset/Set Test Generation                                                [end TTC_110] 
+*************************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Static Logic Test generation                                           [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):     16      16       1574    96.47%   96.47%          113           00:00.69    [end TDA_220] 
+INFO (TDA-220):     32      32        110    99.91%   99.91%            3           00:00.69    [end TDA_220] 
+INFO (TDA-220):     34      32          0    99.91%   99.91%            3           00:00.69    [end TDA_220] 
+INFO (TDA-220):     36      34          3    99.99%   99.99%            0           00:00.69    [end TDA_220] 
+INFO (TTC-110): Ending Static Logic Test generation - processing limit reached                  [end TTC_110] 
+*************************************************************************************************************
+
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204         3204            0            0            0 100.00 100.00
+Total Dynamic                 3188          838            0            0         2350  26.29  26.29
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  3204         3204            0            0            0 100.00 100.00
+Total Dynamic                 3712          838            0            0         2874  22.58  22.58
+****************************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Scan                                           1
+ Logic                                          35
+----------------------------------------------------------
+ Total                                          36
+
+(I) File(s) generated (bytes and name):
+
+          69632 /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultStatus.FULLSCAN.logic
+          52157 /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/TBDbin.FULLSCAN.logic
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,949,616  bytes
+
+                      CPU Time =    0:00:00.04
+                  Elapsed Time =    0:00:00.93                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:26 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+     12 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -   
+      6 INFO (TTC-110): Starting Scan Test generation                                                    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+@file(booth_multiplier_modus.tcl) 8: write_vectors -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -testmode FULLSCAN -inexperiment logic -language verilog -scanformat serial -outputfilename booth_multiplier_modus_generated_results
+Starting Command: write_vectors 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_logic_090925180128-094877000 [end TDA_015]
+
+INFO (TVE-001): Verilog write vectors started.   [end TVE_001] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified SCAN offset for this clock 'pin clk'.  A default clock offset of 16.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin rst_n'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/booth_multiplier_modus_generated_results.cyclemap.   [end TVE_003] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/booth_multiplier_modus_generated_results.1.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 108 total cycles, of which 4 are test cycles, 104 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 52 total measures, of which 0 are PO measures and 52 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-004): Reading test section 1.2.  Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/booth_multiplier_modus_generated_results.2.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 1945 total cycles, of which 73 are test cycles, 1872 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 2432 total measures, of which 612 are PO measures and 1820 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/booth_multiplier_modus_generated_results.mainsim.v.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+    Test       | Global   | Global   | Global   | Global   | Global   | Global   | Sequence   | Overlapped | Total      | 
+    Sequence   | Static   | Static   | Static   | Dynamic  | Dynamic  | Dynamic  | Cycle      | Cycle      | Cycle      | 
+               | Total    | Delta    | Adjusted | Total    | Delta    | Adjusted | Count      | Count      | Count      | 
+               | Coverage | Coverage | Total    | Coverage | Coverage | Total    |            |            |            | 
+               |          |          | Coverage |          |          | Coverage |            |            |            | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.1 |  44.07   |  0.00    |  44.07   |  22.58   |  0.00    |  22.58   |        107 |          0 |        108 |
+     1.2.1.1.1 |  44.07   |  0.00    |  44.07   |  22.58   |  0.00    |  22.58   |          1 |          0 |        109 |
+     1.2.1.2.1 |  47.35   |  3.28    |  47.35   |  22.58   |  0.00    |  22.58   |        107 |         53 |        216 |
+     1.2.1.3.1 |  49.91   |  2.56    |  49.91   |  22.58   |  0.00    |  22.58   |         54 |         53 |        270 |
+     1.2.1.3.2 |  51.19   |  1.28    |  51.19   |  22.58   |  0.00    |  22.58   |         54 |         53 |        324 |
+     1.2.1.3.3 |  53.09   |  1.90    |  53.09   |  22.58   |  0.00    |  22.58   |         54 |         53 |        378 |
+     1.2.1.3.4 |  55.99   |  2.90    |  55.99   |  22.58   |  0.00    |  22.58   |         54 |         53 |        432 |
+     1.2.1.3.5 |  57.68   |  1.69    |  57.68   |  22.58   |  0.00    |  22.58   |         54 |         53 |        486 |
+     1.2.1.3.6 |  66.54   |  8.86    |  66.54   |  22.58   |  0.00    |  22.58   |         54 |         53 |        540 |
+     1.2.1.3.7 |  70.07   |  3.53    |  70.07   |  22.58   |  0.00    |  22.58   |         54 |         53 |        594 |
+     1.2.1.3.8 |  70.88   |  0.81    |  70.88   |  22.58   |  0.00    |  22.58   |         54 |         53 |        648 |
+     1.2.1.3.9 |  71.04   |  0.16    |  71.04   |  22.58   |  0.00    |  22.58   |         54 |         53 |        702 |
+    1.2.1.3.10 |  73.31   |  2.28    |  73.31   |  22.58   |  0.00    |  22.58   |         54 |         53 |        756 |
+    1.2.1.3.11 |  73.50   |  0.19    |  73.50   |  22.58   |  0.00    |  22.58   |         54 |         53 |        810 |
+    1.2.1.3.12 |  73.63   |  0.12    |  73.63   |  22.58   |  0.00    |  22.58   |         54 |         53 |        864 |
+    1.2.1.3.13 |  74.13   |  0.50    |  74.13   |  22.58   |  0.00    |  22.58   |         54 |         53 |        918 |
+    1.2.1.3.14 |  74.38   |  0.25    |  74.38   |  22.58   |  0.00    |  22.58   |         54 |         53 |        972 |
+    1.2.1.3.15 |  80.31   |  5.93    |  80.31   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1026 |
+    1.2.1.3.16 |  96.47   |  16.17   |  96.47   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1080 |
+     1.2.1.4.1 |  97.16   |  0.69    |  97.16   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1134 |
+     1.2.1.4.2 |  97.19   |  0.03    |  97.19   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1188 |
+     1.2.1.4.3 |  97.78   |  0.59    |  97.78   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1242 |
+     1.2.1.4.4 |  97.97   |  0.19    |  97.97   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1296 |
+     1.2.1.4.5 |  98.06   |  0.09    |  98.06   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1350 |
+     1.2.1.4.6 |  98.41   |  0.34    |  98.41   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1404 |
+     1.2.1.4.7 |  98.53   |  0.12    |  98.53   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1458 |
+     1.2.1.4.8 |  98.60   |  0.06    |  98.60   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1512 |
+     1.2.1.4.9 |  99.00   |  0.41    |  99.00   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1566 |
+    1.2.1.4.10 |  99.25   |  0.25    |  99.25   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1620 |
+    1.2.1.4.11 |  99.53   |  0.28    |  99.53   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1674 |
+    1.2.1.4.12 |  99.56   |  0.03    |  99.56   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1728 |
+    1.2.1.4.13 |  99.66   |  0.09    |  99.66   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1782 |
+    1.2.1.4.14 |  99.78   |  0.12    |  99.78   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1836 |
+    1.2.1.4.15 |  99.88   |  0.09    |  99.88   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1890 |
+    1.2.1.4.16 |  99.91   |  0.03    |  99.91   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1944 |
+     1.2.1.5.1 |  99.94   |  0.03    |  99.94   |  22.58   |  0.00    |  22.58   |         54 |         53 |       1998 |
+     1.2.1.5.2 |  100.00   |  0.06    |  100.00   |  22.58   |  0.00    |  22.58   |         55 |          0 |       2053 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,788,400  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.28                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 18:01:29 2025  IST
+
+INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TVE-001): Verilog write vectors started.    
+      1 INFO (TVE-002): Verilog write vectors has completed.    
+      4 INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/booth_multiplier_modus_generated_results.cyclemap.    
+      2 INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.    
+      2 INFO (TVE-005): Created 108 total cycles, of which 4 are test cycles, 104 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      2 INFO (TVE-008): Created 52 total measures, of which 0 are PO measures and 52 are SO (Scan Out) measures.   
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+      3 INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+#@ End verbose source booth_multiplier_modus.tcl
+0
+@modus:root:/ 2> exit

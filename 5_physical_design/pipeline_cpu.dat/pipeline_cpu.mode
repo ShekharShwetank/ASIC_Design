@@ -1,0 +1,79 @@
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockGatingCheck true }
+catch { setAnalysisMode -clockPropagation forcedIdeal }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -enableMultipleDriveNet true }
+catch { setAnalysisMode -log true }
+catch { setAnalysisMode -sequentialConstProp false }
+catch { setAnalysisMode -timeBorrowing true }
+catch { setAnalysisMode -timingSelfLoopsNoSkew false }
+catch { setAnalysisMode -usefulSkew false }
+catch { setAnalysisMode -useOutputPinCap true }
+catch { setAnalysisMode -warn true }
+catch { setOptMode -preserveAllSequential false }
+catch { setPathGroupOptions default -effortLevel low }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setExtractRCMode  -engine preRoute }
+catch {setNanoRouteMode -quiet -drouteEndIteration 1}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "1"}
+catch {setNanoRouteMode -quiet -droutePostRouteWidenWireRule "LEFDefaultRouteSpec_gpdk090"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign true}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 9}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -place_design_floorplan_mode false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setUsefulSkewMode -maxAllowedDelay 1 }
+catch { setUsefulSkewMode -noBoundary false }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer Metal1 }
+catch { setAddRingMode -stacked_via_top_layer Metal9 }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -allow_jog {padcore_ring block_ring} }
+catch { setAddStripeMode -break_at none }
+catch { setAddStripeMode -extend_to_closest_target none }
+catch { setAddStripeMode -ignore_block_check false }
+catch { setAddStripeMode -ignore_nondefault_domains false }
+catch { setAddStripeMode -orthogonal_only true }
+catch { setAddStripeMode -partial_set_thru_domain false }
+catch { setAddStripeMode -route_over_rows_only false }
+catch { setAddStripeMode -rows_without_stripes_only false }
+catch { setAddStripeMode -skip_via_on_pin standardcell }
+catch { setAddStripeMode -skip_via_on_wire_shape noshape }
+catch { setAddStripeMode -spacing_from_block 0 }
+catch { setAddStripeMode -spacing_type edge_to_edge }
+catch { setAddStripeMode -split_vias false }
+catch { setAddStripeMode -stacked_via_bottom_layer Metal1 }
+catch { setAddStripeMode -stacked_via_top_layer Metal9 }
+catch { setAddStripeMode -stop_at_last_wire_for_area false }
+catch { setAddStripeMode -stripe_min_length stripe_width }
+catch { setAddStripeMode -trim_antenna_back_to_shape none }
+catch { setAddStripeMode -via_using_exact_crossover_size false }
+catch { setRouteMode -earlyGlobalHonorMsvRouteConstraint false }
+catch { setRouteMode -earlyGlobalRoutePartitionPinGuide true }
+catch { setEndCapMode -boundary_tap false }
+catch { setFPlanMode -defaultTechSite gsclib090site }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

@@ -1,0 +1,80 @@
+Starting Command: build_model 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -designtop sync_FA -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -designsource sync_FA.test_netlist.v -techlib /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925164441-744992000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Tuesday Sep 09 16:44:41 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 57991.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+
+            -designtop sync_FA
+            -TECHLIB /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+            -LOGFILE /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925164441-744992000
+            -DESIGNSOURCE sync_FA.test_netlist.v
+[end TDA_009]
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "sync_FA.test_netlist.v"
+Search Order  2:  "/home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v"
+
+
+
+Reading Verilog data from sync_FA.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+
+Verilog Parser complete - 481 modules, 1605 gates, 2 user defined primitives.
+
+ERROR (TEI-002): The 'cell sync_HA' was not found in the design source file(s) specified. Missing cell instance name: ha1, parent cell: sync_FA. Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.  [end TEI_002] 
+ERROR (TEI-400): Build Model FAILED:
+  Cell named 'sync_HA' could not be resolved
+  Unexpected Model Build Failure
+  [end TEI_400] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           53,307,920  bytes
+
+                      CPU Time =    0:00:00.17
+                  Elapsed Time =    0:00:00.52                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-200): Build Model - Controller completed.  
+
+  ERROR Messages...
+      1 ERROR (TEI-002): The 'cell sync_HA' was not found in the design source file(s) specified. Missing cell instance name: ha1, parent cell: sync_FA. Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.   
+      1 ERROR (TEI-400): Build Model FAILED:
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

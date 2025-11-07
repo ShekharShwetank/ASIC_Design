@@ -1,0 +1,71 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm datapath_tb.A datapath_tb.B datapath_tb.C datapath_tb.D datapath_tb.Z datapath_tb.clk datapath_tb.done datapath_tb.errors datapath_tb.rst_n datapath_tb.start
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+--- System Reset Complete ---
+PASS: (A=   5, B=  10, C=   8, D=   3) -> Z=     75
+PASS: (A=  10, B=   2, C=   5, D=  10) -> Z=    -60
+FAIL: (A=  -1, B=   1, C=   0, D=   1) -> Z=      0, Expected=   -256
+FAIL: (A= -86, B=  85, C=  85, D= -86) -> Z=   -171, Expected= -21675
+
+*** 2 TESTS FAILED ***
+Simulation complete via $finish(1) at time 225 NS + 0
+./datapath_tb.v:74         $finish;
+ncsim> coverage -analyze
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  86
+  expressions :  6
+  toggle signals :  452
+  fsm states :  10
+  fsm transitions :  10
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  datapath_tb(datapath_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_206d0473_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_206d0473_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+coverage model statistics (approx):
+  covergroup instances  :  n/a
+  covergroup types  :  n/a
+  covergroup bins (types + instances)  :  n/a
+  blocks :  86
+  expressions :  6
+  toggle signals :  452
+  fsm states :  10
+  fsm transitions :  10
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  datapath_tb(datapath_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_206d0473_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_206d0473_00000000.ucd
+  cpu                :  0.0s system + 0.0s user = 0.0s total
+ncsim: Memory Usage - 38.6M program + 298.5M data = 337.2M total (348.7M Peak)
+ncsim: CPU Usage - 1.2s system + 0.4s user = 1.6s total (194.8s, 0.8% cpu)

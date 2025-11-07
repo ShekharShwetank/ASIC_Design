@@ -1,0 +1,153 @@
+Starting Command: build_model 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -designtop d_ff -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -designsource d_ff.test_netlist.v -techlib /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925174625-786574000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Tuesday Sep 09 17:46:25 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 79810.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+
+            -designtop d_ff
+            -TECHLIB /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+            -LOGFILE /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925174625-786574000
+            -DESIGNSOURCE d_ff.test_netlist.v
+[end TDA_009]
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "d_ff.test_netlist.v"
+Search Order  2:  "/home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v"
+
+
+
+Reading Verilog data from d_ff.test_netlist.v
+
+Verilog Parser complete - 2 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+
+Verilog Parser complete - 481 modules, 1605 gates, 2 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+WARNING (TEI-110): Pin 'SE' of 'cell sr_ff' has no external net connection for any usage in the design. Cell contents file: '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/d_ff.test_netlist.v'.  [end TEI_110] 
+WARNING (TEI-110): Pin 'scan_in' of 'cell sr_ff' has no external net connection for any usage in the design. Cell contents file: '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/d_ff.test_netlist.v'.  [end TEI_110] 
+WARNING (TEI-110): Pin 'scan_out' of 'cell sr_ff' has no external net connection for any usage in the design. Cell contents file: '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/d_ff.test_netlist.v'.  [end TEI_110] 
+
+
+Number of blocks in the hierarchical model is: 68.
+
+Number of technology library cell instances in the hierarchical model is: 7.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+WARNING (TLM-117): TIEX is generated for sourceless net 'scan_out' in 'cell d_ff' based on input option 'defaultTIE' set to 'X'.  [end TLM_117] 
+WARNING (TLM-119): Pin 'SE' on block 'UUT_sr_ff' of 'cell sr_ff' within 'cell d_ff' has no net and no TIE properties were found.  TIEX generated to drive pin based on input option 'defaultTIE' set to 'X'.  [end TLM_119] 
+WARNING (TLM-119): Pin 'scan_in' on block 'UUT_sr_ff' of 'cell sr_ff' within 'cell d_ff' has no net and no TIE properties were found.  TIEX generated to drive pin based on input option 'defaultTIE' set to 'X'.  [end TLM_119] 
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+             68  Blocks                          47  Blocks
+            213  Pins                            47  Nodes
+            122  Nets
+
+Primary Inputs:                      Primary Outputs:
+          4  Input Only                         3  Output Only
+          0  Input/Output                       0  Input/Output
+          4  Total Inputs                       3  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+          0  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          3  Tied to X                          0  Total Dotted Nets
+          3  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+          0  Latches
+
+
+          2  Rising  Edge Flop w/Set and Reset-Dominant Port
+          2  Total Flops
+
+          7  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 2 of 10 cells in this design.
+
+Optimization removed a total of 8 tied Latch Ports.
+Optimization removed a total of 10 non-controlling inputs.
+Optimization removed a total of 20 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          100,825,616  bytes
+
+                      CPU Time =    0:00:00.17
+                  Elapsed Time =    0:00:00.65                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-196): Build Model - Hierarchical Model Build starting:  
+      1 INFO (TEI-197): Build Model - Hierarchical Model Build completed.  
+      1 INFO (TEI-198): Build Model - Flat Model Build starting:  
+      1 INFO (TEI-199): Build Model - Flat Model Build completed.   
+      1 INFO (TEI-200): Build Model - Controller completed.  
+      1 INFO (TLM-055): Design Summary
+
+  WARNING Messages...
+      3 WARNING (TEI-110): Pin 'SE' of 'cell sr_ff' has no external net connection for any usage in the design. Cell contents file: '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/d_ff.test_netlist.v'.   
+      1 WARNING (TLM-117): TIEX is generated for sourceless net 'scan_out' in 'cell d_ff' based on input option 'defaultTIE' set to 'X'.   
+      2 WARNING (TLM-119): Pin 'SE' on block 'UUT_sr_ff' of 'cell sr_ff' within 'cell d_ff' has no net and no TIE properties were found.  TIEX generated to drive pin based on input option 'defaultTIE' set to 'X'.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

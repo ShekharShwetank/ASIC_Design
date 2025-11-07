@@ -1,0 +1,221 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Nov  7 18:59:45 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+save_global Default.globals
+set init_gnd_net vss
+set init_lef_file {../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated.lef ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_tech.lef ../../../install/FOUNDRY/digital/90nm/dig/lef/gsclib090_macro.lef}
+set init_verilog ../synthesis/pipeline_control_generated_netlist_dft.v
+set init_mmmc_file Default.view
+set init_pwr_net vdd
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -coreMarginsBy die -site gsclib090site -r 1 0.699972 2.5 2.5 2.5 2.5
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site gsclib090site -r 0.966101694915 0.69945 2.61 2.61 2.61 2.61
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd vss} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 0.7 bottom 0.7 left 0.7 right 0.7} -spacing {top 0.2 bottom 0.2 left 0.2 right 0.2} -offset {top 0.5 bottom 0.5 left 0.5 right 0.5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vdd vss} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 0.7 bottom 0.7 left 0.7 right 0.7} -spacing {top 0.2 bottom 0.2 left 0.2 right 0.2} -offset {top 0.5 bottom 0.5 left 0.5 right 0.5} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {vdd vss} -layer Metal8 -direction vertical -width 0.7 -spacing 0.2 -set_to_set_distance 5 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {vdd vss} -layer Metal8 -direction vertical -width 0.7 -spacing 0.2 -set_to_set_distance 5 -start_from left -start_offset 1 -stop_offset 0 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { corePin } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) Metal9(9) }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { corePin } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { vdd vss } -allowLayerChange 1 -targetViaLayerRange { Metal1(1) Metal9(9) }
+setAnalysisMode -cppr both -clockGatingCheck true -timeBorrowing true -useOutputPinCap true -sequentialConstProp false -timingSelfLoopsNoSkew false -enableMultipleDriveNet true -clkSrcPath true -warn true -usefulSkew false -analysisType onChipVariation -log true
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFDefaultRouteSpec_gpdk090
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -noBoundary false -maxAllowedDelay 1
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp false
+place_design -noPrePlaceOpt -incremental
+setPlaceMode -fp false
+place_design -noPrePlaceOpt -incremental
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp false
+place_design -noPrePlaceOpt -incremental
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp false
+place_design -noPrePlaceOpt -incremental
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp true
+place_design
+setPlaceMode -fp false
+place_design -noPrePlaceOpt -incremental
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+setPlaceMode -reset
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+setPlaceMode -reset
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+refinePlace -eco true
+refinePlace -eco true
+selectInst add_156_40_g770__6260
+zoomBox -43.69700 0.50900 153.16050 95.68250
+zoomBox -60.40900 -5.08950 171.18850 106.87950
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix pipeline_cpu_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix pipeline_cpu_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -pathReports -slackReports -numPaths 50 -prefix pipeline_cpu_preCTS -outDir timingReports
+zoomBox -46.51800 6.25350 150.34050 101.42750
+zoomBox -60.41000 -5.09000 171.18850 106.87950
+add_ndr -name 2w2s
+modify_ndr -name 2w2s
+deselectAll
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property target_max_trans_sdc -delay_corner max_delay -early -clock_tree clk 0.100
+set_ccopt_property target_max_trans_sdc -delay_corner max_delay -late -clock_tree clk 0.100
+set_ccopt_property clock_period -pin clk 10
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clk/constraints_pipeline -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/constraints_pipeline true
+set_ccopt_property extracted_from_clock_name -skew_group clk/constraints_pipeline clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/constraints_pipeline constraints_pipeline
+set_ccopt_property extracted_from_delay_corners -skew_group clk/constraints_pipeline {max_delay min_delay}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -cts
+saveDesign DBS/cts.enc5
+setNanoRouteMode -quiet -routeTopRoutingLayer 9
+setNanoRouteMode -quiet -routeBottomRoutingLayer 1
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail -viaOpt -wireOpt
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail -viaOpt -wireOpt
+zoomBox -36.76250 2.53500 160.09600 97.70900
+zoomBox -60.41000 -5.09000 171.18850 106.87950
+fit
+getFillerMode -quiet
+addFiller -cell FILL32 FILL4 FILL16 FILL8 FILL64 FILL2 FILL1 -prefix FILLER -doDRC -fitGap
+addFiller -cell FILL32 FILL4 FILL16 FILL8 FILL64 FILL2 FILL1 -prefix FILLER -doDRC -fitGap
+reset_parasitics
+extractRC
+saveDesign pipeline_cpu
+saveNetlist pipeline_cpu.v
+streamOut pipeline_cpu -mapFile streamOut.map -libName DesignLib -units 2000 -mode ALL
+streamOut pipeline_cpu -mapFile streamOut.map -libName DesignLib -units 2000 -mode ALL
+zoomBox 18.99900 27.21550 121.76150 76.89750
+zoomBox -20.79950 11.02450 146.53300 91.92350
+zoomBox -39.00050 3.62000 157.86150 98.79550
+zoomBox -60.41300 -5.09150 171.18950 106.88000

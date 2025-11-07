@@ -1,0 +1,83 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:49:48.339458] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files pipeline_control_script_dft.tcl 
+Date:    Tue Nov 04 16:49:48 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402340KB)
+PID:     30033
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[16:49:48.265304] Periodic Lic check successful
+[16:49:48.265304] Feature usage summary:
+[16:49:48.265304] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (4 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source pipeline_control_script_dft.tcl
+#@ Begin verbose source ./pipeline_control_script_dft.tcl
+@file(pipeline_control_script_dft.tcl) 1: set_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+  Setting attribute of root '/': 'init_lib_search_path' = /home/install/FOUNDRY/digital/90nm/dig/lib
+@file(pipeline_control_script_dft.tcl) 2: set_db init_hdl_search_path /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+  Setting attribute of root '/': 'init_hdl_search_path' = /home/student/Desktop/22BEC1204_ASIC_DESIGN/work
+@file(pipeline_control_script_dft.tcl) 3: read_libs slow.lib
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(pipeline_control_script_dft.tcl) 4: read_hdl pipeline_control.v
+    output wire [DATA_WIDTH-1:0] debug_reg_r4
+                 |
+Error   : Reference to undeclared variable. A variable/parameter must be declared before it is referenced. [VLOGPT-20] [read_hdl]
+        : Symbol 'DATA_WIDTH' in file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/pipeline_control.v' on line 11, column 18.
+        : Verilog module is using a parameter that is not defined in the module. You will get a notification for this, if you read the verilog file using the read_hdl command.
+    initial begin
+          |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '/home/student/Desktop/22BEC1204_ASIC_DESIGN/work/pipeline_control.v' on line 72, column 11.
+        : For example, the following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+#@ End verbose source ./pipeline_control_script_dft.tcl
+1
+Encountered problems processing file: pipeline_control_script_dft.tcl
+WARNING: This version of the tool is 1230 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[16:52:07.238153] Cdslmd servers: cadence
+[16:52:07.238162] Feature usage summary:
+[16:52:07.238163] Genus_Synthesis
+
+Normal exit.

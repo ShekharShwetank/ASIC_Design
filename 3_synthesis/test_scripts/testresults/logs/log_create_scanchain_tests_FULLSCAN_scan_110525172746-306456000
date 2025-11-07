@@ -1,0 +1,114 @@
+Starting Command: create_scanchain_tests 
+
+INFO (TDA-005): Command Line Invocation: 
+            create_scanchain_tests -testmode FULLSCAN -experiment scan -workdir /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_create_scanchain_tests_FULLSCAN_scan_110525172746-306456000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Nov 05 17:27:46 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-477.13.1.el8_8.x86_64.
+            This job is process number 25560.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+            -TESTMODE FULLSCAN
+            -EXPERIMENT scan
+
+            -LOGFILE /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_create_scanchain_tests_FULLSCAN_scan_110525172746-306456000
+[end TDA_009]
+
+
+****************************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+****************************************************************************************************
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                 10250            0            0            0        10250   0.00   0.00
+Total Dynamic                 9274            0            0            0         9274   0.00   0.00
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                 10250            0            0            0        10250   0.00   0.00
+Total Dynamic                11330            0            0            0        11330   0.00   0.00
+****************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Scan Test generation                                                   [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1       5544    54.09%   54.09%         4706           00:00.08    [end TDA_220] 
+INFO (TTC-110): Ending Scan Test generation                                                     [end TTC_110] 
+*************************************************************************************************************
+
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                 10250         5548            0            0         4702  54.13  54.13
+Total Dynamic                 9274         3286            0            0         5988  35.43  35.43
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                 10250         5548            0            0         4702  54.13  54.13
+Total Dynamic                11330         3286            0            0         8044  29.00  29.00
+****************************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Scan                                           1
+----------------------------------------------------------
+ Total                                          1
+
+(I) File(s) generated (bytes and name):
+
+          86016 /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/faultStatus.FULLSCAN.scan
+           4028 /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/tbdata/TBDbin.FULLSCAN.scan
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,183,168  bytes
+
+                      CPU Time =    0:00:00.03
+                  Elapsed Time =    0:00:00.30                    [end TDA_001]
+
+     Date Ended:  Wednesday Nov 05 17:27:46 2025  IST
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      3 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -   
+      2 INFO (TTC-110): Starting Scan Test generation                                                    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

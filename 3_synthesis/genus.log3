@@ -1,0 +1,40 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:54:21.328602] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: 
+Date:    Thu Aug 07 16:54:21 2025
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32402344KB)
+PID:     3932
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[16:54:22.470027] Periodic Lic check successful
+[16:54:22.470027] Feature usage summary:
+[16:54:22.470032] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (6 seconds elapsed).
+
+WARNING: This version of the tool is 1141 days old.
+@genus:root: 1> gset_db init_lib_search_path /home/install/FOUNDRY/digital/90nm/dig/lib
+invalid command name "gset_db"
+@genus:root: 2> exit
+
+Lic Summary:
+[16:55:37.263673] Cdslmd servers: cadence-c2s
+[16:55:37.263682] Feature usage summary:
+[16:55:37.263682] Genus_Synthesis
+
+Normal exit.

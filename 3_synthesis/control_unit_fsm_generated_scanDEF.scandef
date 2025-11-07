@@ -1,0 +1,21 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN control_unit_fsm ;
+
+SCANCHAINS 1 ;
+  - top_chain_seg1_clk_rising 
+    + PARTITION p_clk_rising 
+      MAXBITS 4
+    + START PIN scan_in
+    + FLOATING 
+       state_reg[0] ( IN SI ) ( OUT Q ) 
+       state_reg[1] ( IN SI ) ( OUT Q ) 
+       state_reg[2] ( IN SI ) ( OUT Q ) 
+       state_reg[3] ( IN SI ) ( OUT Q ) 
+    + STOP PIN scan_out
+;
+
+END SCANCHAINS 
+END DESIGN 

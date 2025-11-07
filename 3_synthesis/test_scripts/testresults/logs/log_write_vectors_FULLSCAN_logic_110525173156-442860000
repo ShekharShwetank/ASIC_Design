@@ -1,0 +1,125 @@
+Starting Command: write_vectors 
+
+INFO (TDA-005): Command Line Invocation: 
+            write_vectors -language verilog -inexperiment logic -testmode FULLSCAN -scanformat serial -outputfilename register_file_modus_generated_results -workdir /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_logic_110525173156-442860000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Nov 05 17:31:56 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-477.13.1.el8_8.x86_64.
+            This job is process number 29349.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+            -TESTMODE FULLSCAN
+
+            -INEXPERIMENT logic
+            -LOGFILE /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_logic_110525173156-442860000
+            -outputfilename register_file_modus_generated_results
+          + -language verilog
+          + -scanformat serial
+[end TDA_009]
+INFO (TVE-001): Verilog write vectors started.   [end TVE_001] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified SCAN offset for this clock 'pin clk'.  A default clock offset of 16.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin rst_n'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/register_file_modus_generated_results.cyclemap.   [end TVE_003] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/register_file_modus_generated_results.1.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 516 total cycles, of which 4 are test cycles, 512 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 256 total measures, of which 0 are PO measures and 256 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-004): Reading test section 1.2.  Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/register_file_modus_generated_results.2.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 10321 total cycles, of which 81 are test cycles, 10240 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 12454 total measures, of which 2470 are PO measures and 9984 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/register_file_modus_generated_results.mainsim.v.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+    Test       | Global   | Global   | Global   | Global   | Global   | Global   | Sequence   | Overlapped | Total      | 
+    Sequence   | Static   | Static   | Static   | Dynamic  | Dynamic  | Dynamic  | Cycle      | Cycle      | Cycle      | 
+               | Total    | Delta    | Adjusted | Total    | Delta    | Adjusted | Count      | Count      | Count      | 
+               | Coverage | Coverage | Total    | Coverage | Coverage | Total    |            |            |            | 
+               |          |          | Coverage |          |          | Coverage |            |            |            | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.1 |  39.69   |  0.00    |  39.69   |  21.55   |  0.00    |  21.55   |        515 |          0 |        516 |
+     1.2.1.1.1 |  39.69   |  0.00    |  39.69   |  21.55   |  0.00    |  21.55   |          1 |          0 |        517 |
+     1.2.1.2.1 |  42.87   |  3.18    |  42.87   |  21.55   |  0.00    |  21.55   |        515 |        257 |       1032 |
+     1.2.1.3.1 |  49.97   |  7.10    |  49.97   |  21.55   |  0.00    |  21.55   |        258 |        257 |       1290 |
+     1.2.1.3.2 |  51.93   |  1.96    |  51.93   |  21.55   |  0.00    |  21.55   |        258 |        257 |       1548 |
+     1.2.1.3.3 |  53.21   |  1.29    |  53.21   |  21.55   |  0.00    |  21.55   |        258 |        257 |       1806 |
+     1.2.1.3.4 |  54.17   |  0.95    |  54.17   |  21.55   |  0.00    |  21.55   |        258 |        257 |       2064 |
+     1.2.1.3.5 |  55.02   |  0.85    |  55.02   |  21.55   |  0.00    |  21.55   |        258 |        257 |       2322 |
+     1.2.1.3.6 |  55.66   |  0.64    |  55.66   |  21.55   |  0.00    |  21.55   |        258 |        257 |       2580 |
+     1.2.1.3.7 |  56.80   |  1.15    |  56.80   |  21.55   |  0.00    |  21.55   |        258 |        257 |       2838 |
+     1.2.1.3.8 |  60.25   |  3.45    |  60.25   |  21.55   |  0.00    |  21.55   |        258 |        257 |       3096 |
+     1.2.1.3.9 |  60.95   |  0.70    |  60.95   |  21.55   |  0.00    |  21.55   |        258 |        257 |       3354 |
+    1.2.1.3.10 |  61.78   |  0.82    |  61.78   |  21.55   |  0.00    |  21.55   |        258 |        257 |       3612 |
+    1.2.1.3.11 |  62.41   |  0.63    |  62.41   |  21.55   |  0.00    |  21.55   |        258 |        257 |       3870 |
+    1.2.1.3.12 |  62.98   |  0.57    |  62.98   |  21.55   |  0.00    |  21.55   |        258 |        257 |       4128 |
+    1.2.1.3.13 |  63.53   |  0.56    |  63.53   |  21.55   |  0.00    |  21.55   |        258 |        257 |       4386 |
+    1.2.1.3.14 |  64.10   |  0.56    |  64.10   |  21.55   |  0.00    |  21.55   |        258 |        257 |       4644 |
+    1.2.1.3.15 |  65.17   |  1.07    |  65.17   |  21.55   |  0.00    |  21.55   |        258 |        257 |       4902 |
+    1.2.1.3.16 |  65.82   |  0.65    |  65.82   |  21.55   |  0.00    |  21.55   |        258 |        257 |       5160 |
+     1.2.1.4.1 |  66.47   |  0.65    |  66.47   |  21.55   |  0.00    |  21.55   |        258 |        257 |       5418 |
+     1.2.1.4.2 |  67.16   |  0.69    |  67.16   |  21.55   |  0.00    |  21.55   |        258 |        257 |       5676 |
+     1.2.1.4.3 |  68.45   |  1.29    |  68.45   |  21.55   |  0.00    |  21.55   |        258 |        257 |       5934 |
+     1.2.1.4.4 |  69.28   |  0.84    |  69.28   |  21.55   |  0.00    |  21.55   |        258 |        257 |       6192 |
+     1.2.1.4.5 |  73.03   |  3.75    |  73.03   |  21.55   |  0.00    |  21.55   |        258 |        257 |       6450 |
+     1.2.1.4.6 |  73.52   |  0.49    |  73.52   |  21.55   |  0.00    |  21.55   |        258 |        257 |       6708 |
+     1.2.1.4.7 |  73.97   |  0.45    |  73.97   |  21.55   |  0.00    |  21.55   |        258 |        257 |       6966 |
+     1.2.1.4.8 |  74.49   |  0.51    |  74.49   |  21.55   |  0.00    |  21.55   |        258 |        257 |       7224 |
+     1.2.1.4.9 |  76.06   |  1.57    |  76.06   |  21.55   |  0.00    |  21.55   |        258 |        257 |       7482 |
+    1.2.1.4.10 |  86.95   |  10.89   |  86.95   |  21.55   |  0.00    |  21.55   |        258 |        257 |       7740 |
+    1.2.1.4.11 |  87.43   |  0.48    |  87.43   |  21.55   |  0.00    |  21.55   |        258 |        257 |       7998 |
+    1.2.1.4.12 |  93.66   |  6.23    |  93.66   |  21.55   |  0.00    |  21.55   |        258 |        257 |       8256 |
+    1.2.1.4.13 |  94.15   |  0.49    |  94.15   |  21.55   |  0.00    |  21.55   |        258 |        257 |       8514 |
+    1.2.1.4.14 |  95.20   |  1.05    |  95.20   |  21.55   |  0.00    |  21.55   |        258 |        257 |       8772 |
+    1.2.1.4.15 |  95.72   |  0.52    |  95.72   |  21.55   |  0.00    |  21.55   |        258 |        257 |       9030 |
+    1.2.1.4.16 |  97.83   |  2.11    |  97.83   |  21.55   |  0.00    |  21.55   |        258 |        257 |       9288 |
+     1.2.1.5.1 |  98.99   |  1.16    |  98.99   |  21.55   |  0.00    |  21.55   |        258 |        257 |       9546 |
+     1.2.1.5.2 |  99.53   |  0.54    |  99.53   |  21.55   |  0.00    |  21.55   |        258 |        257 |       9804 |
+     1.2.1.5.3 |  99.96   |  0.43    |  99.96   |  21.55   |  0.00    |  21.55   |        258 |        257 |      10062 |
+     1.2.1.5.4 |  99.97   |  0.01    |  99.97   |  21.55   |  0.00    |  21.55   |        258 |        257 |      10320 |
+     1.2.1.5.5 |  99.98   |  0.01    |  99.98   |  21.55   |  0.00    |  21.55   |        258 |        257 |      10578 |
+     1.2.1.5.6 |  100.00   |  0.02    |  100.00   |  21.55   |  0.00    |  21.55   |        259 |          0 |      10837 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            8,851,824  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.25                    [end TDA_001]
+
+     Date Ended:  Wednesday Nov 05 17:31:56 2025  IST
+
+INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TVE-001): Verilog write vectors started.    
+      1 INFO (TVE-002): Verilog write vectors has completed.    
+      4 INFO (TVE-003): Verilog write vectors output file will be: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/register_file_modus_generated_results.cyclemap.    
+      2 INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.    
+      2 INFO (TVE-005): Created 516 total cycles, of which 4 are test cycles, 512 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      2 INFO (TVE-008): Created 256 total measures, of which 0 are PO measures and 256 are SO (Scan Out) measures.   
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+      3 INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

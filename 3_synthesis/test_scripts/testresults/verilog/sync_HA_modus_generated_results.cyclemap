@@ -1,0 +1,42 @@
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) 
+// This file was created on..............September 09, 2025 at 16:41:05
+// The date time stamp for the TBDbin file TBDbin.FULLSCAN.logic;  20250909111103 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//   Total    Relative   Relative     Test      CPP       Pattern                    Event                                          Cycle    Scan      Relative   Measure
+//   Cycle    Cycle      Simulation   Sequence  Test      Odometer                   Type                                           Offset   Length    Scan       Event  
+//   Count    Count      Time (ns)    Number    Number                                                                                                 Number            
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// The vector file output name:  sync_HA_modus_generated_results.1.verilog
+         3         3          160         1         2    1.1.1.2.1.1                Scan_Load - Shift                                   0        2         1        N 
+         4         4          320         1         2    1.1.1.2.1.1                end_of_Scan_Load                                    1        0         1        N 
+         6         6          400         1         2    1.1.1.2.1.2                Scan_Unload - Shift                                 0        2         2        N 
+         7         7          560         1         2    1.1.1.2.1.2                end_of_Scan_Unload                                  1        0         2        Y 
+// The vector file output name:  sync_HA_modus_generated_results.2.verilog
+        11         3          160         2         4    1.2.1.2.1.1                Scan_Load - Shift                                   0        2         1        N 
+        12         4          320         2         4    1.2.1.2.1.1                end_of_Scan_Load                                    1        0         1        N 
+        13         5          320         2         4    1.2.1.2.1.4                Measure_PO                                          0        1         1        Y 
+        15         7          480         2         4    1.2.1.2.1.5                Scan_Unload - Shift - Overlap                       0        2         2        Y 
+        15         7          480         3         5    1.2.1.2.2.1                Scan_Load - Shift - Overlap                         0        2         2        N 
+        16         8          640         3         5    1.2.1.2.2.1                end_of_Scan_Load - Overlap                          1        0         2        Y 
+        17         9          640         3         5    1.2.1.2.2.4                Measure_PO                                          0        1         2        Y 
+        19        11          800         3         5    1.2.1.2.2.5                Scan_Unload - Shift - Overlap                       0        2         3        Y 
+        19        11          800         4         6    1.2.1.2.3.1                Scan_Load - Shift - Overlap                         0        2         3        N 
+        20        12          960         4         6    1.2.1.2.3.1                end_of_Scan_Load - Overlap                          1        0         3        Y 
+        21        13          960         4         6    1.2.1.2.3.4                Measure_PO                                          0        1         3        Y 
+        23        15         1120         4         6    1.2.1.2.3.5                Scan_Unload - Shift - Overlap                       0        2         4        Y 
+        23        15         1120         5         7    1.2.1.2.4.1                Scan_Load - Shift - Overlap                         0        2         4        N 
+        24        16         1280         5         7    1.2.1.2.4.1                end_of_Scan_Load - Overlap                          1        0         4        Y 
+        25        17         1280         5         7    1.2.1.2.4.4                Measure_PO                                          0        1         4        Y 
+        27        19         1440         5         7    1.2.1.2.4.5                Scan_Unload - Shift - Overlap                       0        2         5        Y 
+        27        19         1440         6         8    1.2.1.2.5.1                Scan_Load - Shift - Overlap                         0        2         5        N 
+        28        20         1600         6         8    1.2.1.2.5.1                end_of_Scan_Load - Overlap                          1        0         5        Y 
+        29        21         1600         6         8    1.2.1.2.5.4                Measure_PO                                          0        1         5        Y 
+        31        23         1760         6         8    1.2.1.2.5.5                Scan_Unload - Shift - Overlap                       0        2         6        Y 
+        31        23         1760         7         9    1.2.1.2.6.1                Scan_Load - Shift - Overlap                         0        2         6        N 
+        32        24         1920         7         9    1.2.1.2.6.1                end_of_Scan_Load - Overlap                          1        0         6        Y 
+        33        25         1920         7         9    1.2.1.2.6.4                Measure_PO                                          0        1         6        Y 
+        35        27         2080         7         9    1.2.1.2.6.5                Scan_Unload - Shift                                 0        2         7        N 
+        36        28         2240         7         9    1.2.1.2.6.5                end_of_Scan_Unload                                  1        0         7        Y 

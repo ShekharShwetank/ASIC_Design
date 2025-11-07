@@ -1,0 +1,142 @@
+Starting Command: build_model 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -designtop resource_shared_datapath -workdir /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -designsource resource_shared_datapath.test_netlist.v -techlib /home/student/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_110525173607-629493000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Wednesday Nov 05 17:36:07 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-477.13.1.el8_8.x86_64.
+            This job is process number 42634.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+
+            -designtop resource_shared_datapath
+            -TECHLIB /home/student/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+            -LOGFILE /home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_110525173607-629493000
+            -DESIGNSOURCE resource_shared_datapath.test_netlist.v
+[end TDA_009]
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "resource_shared_datapath.test_netlist.v"
+Search Order  2:  "/home/student/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v"
+
+
+
+Reading Verilog data from resource_shared_datapath.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /home/student/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+
+Verilog Parser complete - 481 modules, 1605 gates, 2 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+
+
+Number of blocks in the hierarchical model is: 3,088.
+
+Number of technology library cell instances in the hierarchical model is: 403.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          3,088  Blocks                       2,777  Blocks
+          9,838  Pins                         2,777  Nodes
+          5,361  Nets
+
+Primary Inputs:                      Primary Outputs:
+         37  Input Only                        20  Output Only
+          0  Input/Output                       0  Input/Output
+         37  Total Inputs                      20  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        142  Tied to 0                          0  Two-State
+         71  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        213  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+          0  Latches
+
+
+         71  Rising  Edge Flop w/Set and Reset-Dominant Port
+         71  Total Flops
+
+        403  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 1 of 27 cells in this design.
+
+Optimization removed a total of 0 tied Latch Ports.
+Optimization removed a total of 0 non-controlling inputs.
+Optimization removed a total of 71 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          101,360,320  bytes
+
+                      CPU Time =    0:00:00.17
+                  Elapsed Time =    0:00:00.69                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-196): Build Model - Hierarchical Model Build starting:  
+      1 INFO (TEI-197): Build Model - Hierarchical Model Build completed.  
+      1 INFO (TEI-198): Build Model - Flat Model Build starting:  
+      1 INFO (TEI-199): Build Model - Flat Model Build completed.   
+      1 INFO (TEI-200): Build Model - Controller completed.  
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+Tester_Description_Rule = dummy.tdr
+               ;
+scan type = assumed gsd
+  boundary=no
+  in = pi
+  out = po
+  ;
+test_types static logic signatures no
+  shift_register
+  static macro
+;
+faults static
+;
+test_function_pin_attributes TB_KFLAG, K_FLAG, TB_OFLAG, O_FLAG
+              ;

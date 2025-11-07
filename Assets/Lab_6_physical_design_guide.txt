@@ -1,0 +1,131 @@
+REQUIREMENTS:
+*netlist_dft.v
+Libraries: slow.lib, fast.lib
+LEF - Layout Extracted Format
+
+PREREQUISITE:
+Ensure the post-synthesis netlist (*.netlist_dft.v), constraint file (*.sdc), library files (slow.lib, fast.lib), and LEF file are available in the working directory.
+
+## Invoke Cadence Innovus Tool
+
+In terminal:
+csh
+source /home/install/cshrc
+innovus
+
+## Import Design
+
+1. Go to File -> Import Design
+2. Check on "Auto Assign"
+3. Add the netlist file (*.netlist_dft.v) for the design
+4. Add LEF file from /home/install/FOUNDRY/digital/90nm/dig/lef/all.lef
+5. Specify the Power Nets as "VDD" and Ground Nets as "VSS"
+
+## MMMC - Multi-Mode Multi-Corner Analysis
+
+1. Customize "MMMC objects" and "Analysis views" by clicking on "Create Analysis Configuration"
+2. Define:
+   - Library Sets
+   - RC Corners
+   - Delay Corners
+   - Constraint Modes
+   - Analysis Views
+   - Setup Analysis Views
+   - Hold Analysis Views
+
+### Library Sets:
+- Double click on Library Sets -> Give name 'min_timing' -> Browse and select fast.lib -> Add and press Ok.
+- Similarly, for 'max_timing' select slow.lib.
+
+### RC Corners:
+- Double click on RC Corner -> Give name 'rccorner' -> Choose 'captable' from /home/install/FOUNDRY/digital/90nm/dig/captable/*.tbl
+
+### Delay Corners:
+- Double click on Delay Corner -> Choose 'min_delay' -> Select library set 'min_timing'.
+- Similarly, for 'max_delay' select 'max_timing'.
+
+### Constraint Modes:
+- Double click on Constraint Mode -> Give name 'constraints' -> Browse and select the .sdc file.
+
+### Analysis Views:
+- Double click on Analysis Views -> Type 'best_case' -> Choose 'min_delay' from drop down.
+- Similarly, type 'worst_case' -> Choose 'max_delay'.
+
+### Setup and Hold Analysis Views:
+- In Setup, double click and choose 'worst_case'.
+- In Hold, double click and choose 'best_case'.
+
+## Floorplan
+
+Go to Floorplan -> Specify Floorplan -> Set Aspect ratio to 1 -> Set all "Core to Die Boundary" to 2.5 -> Click Ok.
+
+## Power Planning
+
+1. Go to Power -> Power Planning -> Add Ring -> Nets: VDD VSS -> For power, use top most metal layer (Top & Bottom: Metal 5, Left & Right: Metal 6) -> Set all width to 0.7, spacing 0.2, Offset to 0.5 -> Click Ok.
+
+2. Go to Power -> Power Planning -> Add Stripes -> Nets: VDD VSS -> Choose Metal 6, Vertical -> Set width to 0.7, space to 0.2 -> Click 'Set-to-set to 5' -> Set Start to 1 and Stop to 0 at the bottom (First and last stripe).
+
+3. Go to Route -> Special Route -> Nets: VDD VSS -> Uncheck all except 'Follow Pins' in SRoute -> Press Ok.
+
+## Set Analysis Mode
+
+Go to Tools -> Set Mode -> Specify Analysis Mode -> Enable OCV and CPPR.
+
+## Placement Mode
+
+Go to Tools -> Set Mode -> Mode Setup -> Click on Placement -> Enable I/O pins -> Press Ok.
+
+## Place Standard Cells
+
+Go to Place -> Standard Cell -> Click Ok.
+
+## Report Timing (Pre-CTS)
+
+1. View Post Standard Cell Placement.
+2. Go to Timing -> Report Timing -> Choose Pre CTS -> Do for both Setup and Hold one by one.
+3. Check the timing report folder for setup and hold slack values (ensure positive).
+
+## Clock Tree Synthesis (CTS)
+
+1. Go to Edit -> Create Non Default Rule -> Name: 2w2s
+
+2. Write a CTS script file 'ccopt.spec' with the following content:
+
+create_route_type -name clkroute -non_default_rule 2w2s -bottom_preferred_layer Metal5 -top_preferred_layer Metal6
+set_ccopt_property route_type clkroute -net_type trunk
+set_ccopt_property route_type clkroute -net_type leaf
+
+## Specify Buffers, Inverters, and Clock Gating
+set_ccopt_property buffer_cells {CLKBUFX2 CLKBUFX4}
+set_ccopt_property inverter_cells {CLKINVX2 CLKINVX4}
+set_ccopt_property clock_gating_cells TLATNTSCA*
+
+## Generate the ccopt file and source it
+create_ccopt_clock_tree_spec -file ccopt.spec
+
+3. In terminal: source ccopt.spec
+4. Run CTS: ccopt_design -cts
+5. Save Design: saveDesign DBS/cts.enc
+
+## Routing
+
+Go to Place -> Nano Route -> Route (Global and Detailed routing) -> Enable Optimize via and Optimize wire -> Click Ok.
+
+## Add Fillers
+
+Go to Place -> Physical Cell -> Add Fillers -> Click on Select -> Add all filler cells -> Close -> Ok -> Check 'Do DRC' and 'Fit Gap'.
+
+## Extract RC
+
+Go to Timing -> Extract RC -> Check 'Save SPF to' & 'Save SPEF to' -> Press Ok.
+
+## Save Netlist and Design
+
+1. Go to File -> Save -> Netlist -> Ok.
+2. Go to File -> Save Design -> Enable Innovus -> Type filename.enc -> Click Ok.
+
+## Additional Notes
+
+- Die, core, bond wires, packages, pitch: Defined during floorplan and power planning.
+- VDD & VSS Power Rings: Added via Add Ring.
+- Jumping of Metals, Jumpers: Handled in routing and special route for power nets.

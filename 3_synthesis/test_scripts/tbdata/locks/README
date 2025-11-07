@@ -1,0 +1,7 @@
+
+The locks directory is used for locking of files and objects
+within the parent directory. The files in this directory are always of zero
+length and are removed when the corresponding objects or files in the parent
+directory are removed by Modus. This locks directory itself is removed
+when Modus is removing all files for the circuit associated with the parent
+directory.

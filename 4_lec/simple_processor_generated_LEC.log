@@ -1,0 +1,102 @@
+                          CONFORMAL (R)
+                   Version 21.10-s300 (22-Aug-2021) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2021. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 1474 days old. You can download the latest version from http://downloads.cadence.com.
+
+CPU time     : 0.15    seconds
+Elapse time  : 1       seconds
+Memory usage : 78.30   M bytes
+// Command: read library /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v -verilog -both
+// Parsing file /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v ...
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:56)
+// Warning: (VLG5.5) Internal primitive is recognized (occurrence:120)
+// Warning: (VLG5.6) Named port association is ignored for primitive gate (occurrence:120)
+// Warning: (IGN4) Attribute instance(s) are ignored (occurrence:2)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:1)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:16)
+// Note: Read VERILOG library successfully
+// Command: read design /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/simple_processor.v -verilog -golden
+// Parsing file /home/student/Desktop/22BEC1204_ASIC_DESIGN/work/simple_processor.v ...
+// Golden root module is set to 'simple_processor'
+// Note: (RTL5.5a) Default case item with non-X assignment(s) (occurrence:1)
+// Note: (RTL5.6) Case statement with no default (occurrence:1)
+// Note: (RTL5.7) Default case item with inconsistent assignment(s). (occurrence:1)
+// Note: Read VERILOG design successfully
+// Command: read design /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/simple_processor_generated_netlist_dft.v -verilog -revised
+// Parsing file /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/simple_processor_generated_netlist_dft.v ...
+// Revised root module is set to 'simple_processor'
+// Note: Read VERILOG design successfully
+// Command: add ignored inputs scan_in -revised
+// Command: add ignored outputs scan_out -revised
+// Command: add pin constraints 0 SE -revised
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 56
+// Revised key points = 57
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            20     9      27        56      
+--------------------------------------------------------------------------------
+Revised           20     9      27        56      
+================================================================================
+Unmapped points:
+================================================================================
+Revised:
+--------------------------------------------------------------------------------
+Unmapped points   PI        Total   
+--------------------------------------------------------------------------------
+Extra             1         1       
+================================================================================
+// Command: add compare point -all
+// 36 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           9      27        36      
+================================================================================
+// Command: report verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 1
+     Command "add ignore outputs" used:                        yes
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        0
+--------------------------------------------------------------------------------
+6. Compare Results:                                                        PASS
+================================================================================
+// Command: set gui on
+// Switching to GUI mode
+//Note: Enable Unified Schematic Viewer usage.
+//Note: Enable buffer/inverter collapsing usage on schematics
+//Note: Enable bus collapsing usage on schematics
+//Note: Enable independent UI styles on each schematics
+//Note: Set schematic traverse max. level to 200 !!!
+//Note: Set schematic traverse max. time to 300(seconds) !!!
+//Note: Enable Schematic concise drawing support
+CPU time     : 0.34    seconds
+Elapse time  : 1       seconds
+Memory usage : 161.74  M bytes

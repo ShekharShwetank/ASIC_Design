@@ -1,0 +1,81 @@
+
+ 
+Copyright (C) 2002-2020 Cadence Design Systems Inc. All Rights Reserved. 
+Cadence and the Cadence logo are registered trademarks and Modus is a trademark 
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Type 'help legal_notices' for third party license notices. 
+Version : 20.12-s002_1, built Feb 26 2021 (linux26_64)
+Options : -f d_ff_modus.tcl
+Date    : Tue, September 09 17:44:58 2025
+Host    : ic312.vit.ac.in (x86_64 Linux 4.18.0-425.19.2.el8_7.x86_64) (12*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+OS      : Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+INFO (TUI-300): Detected the presence of Modus database in present working directory. The 'workdir' root attribute is set to '/home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts'. [end TUI_300]
+#@ Processing -files option
+@modus:root:/ 1>  source d_ff_modus.tcl
+#@ Begin verbose source d_ff_modus.tcl
+@file(d_ff_modus.tcl) 1: build_model -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts -designsource d_ff.test_netlist.v -techlib /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v -designtop d_ff
+INFO (TUI-772): The command 'build_model' will release the currently acquired resources. Please set the context and circuit state after completion of the command. [end TUI_772] 
+
+Starting Command: build_model 
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_build_model_090925174458-949235000 [end TDA_015]
+
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "d_ff.test_netlist.v"
+Search Order  2:  "/home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v"
+
+
+
+Reading Verilog data from d_ff.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /home/student/Desktop/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+
+Verilog Parser complete - 481 modules, 1605 gates, 2 user defined primitives.
+
+ERROR (TEI-002): The 'cell sr_ff' was not found in the design source file(s) specified. Missing cell instance name: UUT_sr_ff, parent cell: d_ff. Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.  [end TEI_002] 
+ERROR (TEI-400): Build Model FAILED:
+  Cell named 'sr_ff' could not be resolved
+  Unexpected Model Build Failure
+  [end TEI_400] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =           53,353,488  bytes
+
+                      CPU Time =    0:00:00.17
+                  Elapsed Time =    0:00:00.48                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-200): Build Model - Controller completed.  
+
+  ERROR Messages...
+      1 ERROR (TEI-002): The 'cell sr_ff' was not found in the design source file(s) specified. Missing cell instance name: UUT_sr_ff, parent cell: d_ff. Note that for Verilog, a change has been made to no longer automatically search the directories for explicitly specified files. Therefore it may now be necessary to add the directory of this missing cell to build the complete design.   
+      1 ERROR (TEI-400): Build Model FAILED:
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
+File 'd_ff_modus.tcl' line 1: errors out.
+#@ End verbose source d_ff_modus.tcl
+@modus:root:/ 2> exit

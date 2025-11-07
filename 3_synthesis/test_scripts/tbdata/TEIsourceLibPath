@@ -1,0 +1,3 @@
+SOURCE=resource_shared_datapath.test_netlist.v
+TECHLIB=/home/student/22BEC1204_ASIC_DESIGN/LEC/slowlib_verilog_generated.v
+RUNDIR=/home/student/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/

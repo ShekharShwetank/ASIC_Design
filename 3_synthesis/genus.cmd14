@@ -1,0 +1,10 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.14-s082_1, built Jun 23 2022 14:32:08
+
+# Date: Mon Aug 11 13:07:56 2025
+# Host: ic312.vit.ac.in (x86_64 w/Linux 4.18.0-425.19.2.el8_7.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+# OS:   Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+source decoder_script.tcl
+gui_hide
+genus -f seq_det_0010_script.tcl
+exit

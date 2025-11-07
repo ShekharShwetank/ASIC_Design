@@ -1,0 +1,173 @@
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) 
+// This file was created on..............November 05, 2025 at 17:31:56
+// The date time stamp for the TBDbin file TBDbin.FULLSCAN.logic;  20251105120155 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//   Total    Relative   Relative     Test      CPP       Pattern                    Event                                          Cycle    Scan      Relative   Measure
+//   Cycle    Cycle      Simulation   Sequence  Test      Odometer                   Type                                           Offset   Length    Scan       Event  
+//   Count    Count      Time (ns)    Number    Number                                                                                                 Number            
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// The vector file output name:  register_file_modus_generated_results.1.verilog
+         3         3          160         1         2    1.1.1.2.1.1                Scan_Load - Shift                                   0      256         1        N 
+       258       258        20640         1         2    1.1.1.2.1.1                end_of_Scan_Load                                  255        0         1        N 
+       260       260        20720         1         2    1.1.1.2.1.2                Scan_Unload - Shift                                 0      256         2        N 
+       515       515        41200         1         2    1.1.1.2.1.2                end_of_Scan_Unload                                255        0         2        Y 
+// The vector file output name:  register_file_modus_generated_results.2.verilog
+       519         3          160         2         4    1.2.1.2.1.1                Scan_Load - Shift                                   0      256         1        N 
+       774       258        20640         2         4    1.2.1.2.1.1                end_of_Scan_Load                                  255        0         1        N 
+       777       261        20800         2         4    1.2.1.2.1.4                Scan_Unload - Shift - Overlap                       0      256         2        Y 
+       777       261        20800         3         5    1.2.1.3.1.1                Scan_Load - Shift - Overlap                         0      256         2        N 
+      1032       516        41280         3         5    1.2.1.3.1.1                end_of_Scan_Load - Overlap                        255        0         2        Y 
+      1033       517        41280         3         5    1.2.1.3.1.3                Measure_PO                                          0        1         2        Y 
+      1035       519        41440         3         5    1.2.1.3.1.4                Scan_Unload - Shift - Overlap                       0      256         3        Y 
+      1035       519        41440         4         6    1.2.1.3.2.1                Scan_Load - Shift - Overlap                         0      256         3        N 
+      1290       774        61920         4         6    1.2.1.3.2.1                end_of_Scan_Load - Overlap                        255        0         3        Y 
+      1291       775        61920         4         6    1.2.1.3.2.3                Measure_PO                                          0        1         3        Y 
+      1293       777        62080         4         6    1.2.1.3.2.4                Scan_Unload - Shift - Overlap                       0      256         4        Y 
+      1293       777        62080         5         7    1.2.1.3.3.1                Scan_Load - Shift - Overlap                         0      256         4        N 
+      1548      1032        82560         5         7    1.2.1.3.3.1                end_of_Scan_Load - Overlap                        255        0         4        Y 
+      1549      1033        82560         5         7    1.2.1.3.3.3                Measure_PO                                          0        1         4        Y 
+      1551      1035        82720         5         7    1.2.1.3.3.4                Scan_Unload - Shift - Overlap                       0      256         5        Y 
+      1551      1035        82720         6         8    1.2.1.3.4.1                Scan_Load - Shift - Overlap                         0      256         5        N 
+      1806      1290       103200         6         8    1.2.1.3.4.1                end_of_Scan_Load - Overlap                        255        0         5        Y 
+      1807      1291       103200         6         8    1.2.1.3.4.3                Measure_PO                                          0        1         5        Y 
+      1809      1293       103360         6         8    1.2.1.3.4.4                Scan_Unload - Shift - Overlap                       0      256         6        Y 
+      1809      1293       103360         7         9    1.2.1.3.5.1                Scan_Load - Shift - Overlap                         0      256         6        N 
+      2064      1548       123840         7         9    1.2.1.3.5.1                end_of_Scan_Load - Overlap                        255        0         6        Y 
+      2065      1549       123840         7         9    1.2.1.3.5.3                Measure_PO                                          0        1         6        Y 
+      2067      1551       124000         7         9    1.2.1.3.5.4                Scan_Unload - Shift - Overlap                       0      256         7        Y 
+      2067      1551       124000         8        10    1.2.1.3.6.1                Scan_Load - Shift - Overlap                         0      256         7        N 
+      2322      1806       144480         8        10    1.2.1.3.6.1                end_of_Scan_Load - Overlap                        255        0         7        Y 
+      2323      1807       144480         8        10    1.2.1.3.6.3                Measure_PO                                          0        1         7        Y 
+      2325      1809       144640         8        10    1.2.1.3.6.4                Scan_Unload - Shift - Overlap                       0      256         8        Y 
+      2325      1809       144640         9        11    1.2.1.3.7.1                Scan_Load - Shift - Overlap                         0      256         8        N 
+      2580      2064       165120         9        11    1.2.1.3.7.1                end_of_Scan_Load - Overlap                        255        0         8        Y 
+      2581      2065       165120         9        11    1.2.1.3.7.3                Measure_PO                                          0        1         8        Y 
+      2583      2067       165280         9        11    1.2.1.3.7.4                Scan_Unload - Shift - Overlap                       0      256         9        Y 
+      2583      2067       165280        10        12    1.2.1.3.8.1                Scan_Load - Shift - Overlap                         0      256         9        N 
+      2838      2322       185760        10        12    1.2.1.3.8.1                end_of_Scan_Load - Overlap                        255        0         9        Y 
+      2839      2323       185760        10        12    1.2.1.3.8.3                Measure_PO                                          0        1         9        Y 
+      2841      2325       185920        10        12    1.2.1.3.8.4                Scan_Unload - Shift - Overlap                       0      256        10        Y 
+      2841      2325       185920        11        13    1.2.1.3.9.1                Scan_Load - Shift - Overlap                         0      256        10        N 
+      3096      2580       206400        11        13    1.2.1.3.9.1                end_of_Scan_Load - Overlap                        255        0        10        Y 
+      3097      2581       206400        11        13    1.2.1.3.9.3                Measure_PO                                          0        1        10        Y 
+      3099      2583       206560        11        13    1.2.1.3.9.4                Scan_Unload - Shift - Overlap                       0      256        11        Y 
+      3099      2583       206560        12        14    1.2.1.3.10.1               Scan_Load - Shift - Overlap                         0      256        11        N 
+      3354      2838       227040        12        14    1.2.1.3.10.1               end_of_Scan_Load - Overlap                        255        0        11        Y 
+      3355      2839       227040        12        14    1.2.1.3.10.3               Measure_PO                                          0        1        11        Y 
+      3357      2841       227200        12        14    1.2.1.3.10.4               Scan_Unload - Shift - Overlap                       0      256        12        Y 
+      3357      2841       227200        13        15    1.2.1.3.11.1               Scan_Load - Shift - Overlap                         0      256        12        N 
+      3612      3096       247680        13        15    1.2.1.3.11.1               end_of_Scan_Load - Overlap                        255        0        12        Y 
+      3613      3097       247680        13        15    1.2.1.3.11.3               Measure_PO                                          0        1        12        Y 
+      3615      3099       247840        13        15    1.2.1.3.11.4               Scan_Unload - Shift - Overlap                       0      256        13        Y 
+      3615      3099       247840        14        16    1.2.1.3.12.1               Scan_Load - Shift - Overlap                         0      256        13        N 
+      3870      3354       268320        14        16    1.2.1.3.12.1               end_of_Scan_Load - Overlap                        255        0        13        Y 
+      3871      3355       268320        14        16    1.2.1.3.12.3               Measure_PO                                          0        1        13        Y 
+      3873      3357       268480        14        16    1.2.1.3.12.4               Scan_Unload - Shift - Overlap                       0      256        14        Y 
+      3873      3357       268480        15        17    1.2.1.3.13.1               Scan_Load - Shift - Overlap                         0      256        14        N 
+      4128      3612       288960        15        17    1.2.1.3.13.1               end_of_Scan_Load - Overlap                        255        0        14        Y 
+      4129      3613       288960        15        17    1.2.1.3.13.3               Measure_PO                                          0        1        14        Y 
+      4131      3615       289120        15        17    1.2.1.3.13.4               Scan_Unload - Shift - Overlap                       0      256        15        Y 
+      4131      3615       289120        16        18    1.2.1.3.14.1               Scan_Load - Shift - Overlap                         0      256        15        N 
+      4386      3870       309600        16        18    1.2.1.3.14.1               end_of_Scan_Load - Overlap                        255        0        15        Y 
+      4387      3871       309600        16        18    1.2.1.3.14.3               Measure_PO                                          0        1        15        Y 
+      4389      3873       309760        16        18    1.2.1.3.14.4               Scan_Unload - Shift - Overlap                       0      256        16        Y 
+      4389      3873       309760        17        19    1.2.1.3.15.1               Scan_Load - Shift - Overlap                         0      256        16        N 
+      4644      4128       330240        17        19    1.2.1.3.15.1               end_of_Scan_Load - Overlap                        255        0        16        Y 
+      4645      4129       330240        17        19    1.2.1.3.15.3               Measure_PO                                          0        1        16        Y 
+      4647      4131       330400        17        19    1.2.1.3.15.4               Scan_Unload - Shift - Overlap                       0      256        17        Y 
+      4647      4131       330400        18        20    1.2.1.3.16.1               Scan_Load - Shift - Overlap                         0      256        17        N 
+      4902      4386       350880        18        20    1.2.1.3.16.1               end_of_Scan_Load - Overlap                        255        0        17        Y 
+      4903      4387       350880        18        20    1.2.1.3.16.3               Measure_PO                                          0        1        17        Y 
+      4905      4389       351040        18        20    1.2.1.3.16.4               Scan_Unload - Shift - Overlap                       0      256        18        Y 
+      4905      4389       351040        19        21    1.2.1.4.1.1                Scan_Load - Shift - Overlap                         0      256        18        N 
+      5160      4644       371520        19        21    1.2.1.4.1.1                end_of_Scan_Load - Overlap                        255        0        18        Y 
+      5161      4645       371520        19        21    1.2.1.4.1.4                Measure_PO                                          0        1        18        Y 
+      5163      4647       371680        19        21    1.2.1.4.1.5                Scan_Unload - Shift - Overlap                       0      256        19        Y 
+      5163      4647       371680        20        22    1.2.1.4.2.1                Scan_Load - Shift - Overlap                         0      256        19        N 
+      5418      4902       392160        20        22    1.2.1.4.2.1                end_of_Scan_Load - Overlap                        255        0        19        Y 
+      5419      4903       392160        20        22    1.2.1.4.2.4                Measure_PO                                          0        1        19        Y 
+      5421      4905       392320        20        22    1.2.1.4.2.5                Scan_Unload - Shift - Overlap                       0      256        20        Y 
+      5421      4905       392320        21        23    1.2.1.4.3.1                Scan_Load - Shift - Overlap                         0      256        20        N 
+      5676      5160       412800        21        23    1.2.1.4.3.1                end_of_Scan_Load - Overlap                        255        0        20        Y 
+      5677      5161       412800        21        23    1.2.1.4.3.4                Measure_PO                                          0        1        20        Y 
+      5679      5163       412960        21        23    1.2.1.4.3.5                Scan_Unload - Shift - Overlap                       0      256        21        Y 
+      5679      5163       412960        22        24    1.2.1.4.4.1                Scan_Load - Shift - Overlap                         0      256        21        N 
+      5934      5418       433440        22        24    1.2.1.4.4.1                end_of_Scan_Load - Overlap                        255        0        21        Y 
+      5935      5419       433440        22        24    1.2.1.4.4.4                Measure_PO                                          0        1        21        Y 
+      5937      5421       433600        22        24    1.2.1.4.4.5                Scan_Unload - Shift - Overlap                       0      256        22        Y 
+      5937      5421       433600        23        25    1.2.1.4.5.1                Scan_Load - Shift - Overlap                         0      256        22        N 
+      6192      5676       454080        23        25    1.2.1.4.5.1                end_of_Scan_Load - Overlap                        255        0        22        Y 
+      6193      5677       454080        23        25    1.2.1.4.5.4                Measure_PO                                          0        1        22        Y 
+      6195      5679       454240        23        25    1.2.1.4.5.5                Scan_Unload - Shift - Overlap                       0      256        23        Y 
+      6195      5679       454240        24        26    1.2.1.4.6.1                Scan_Load - Shift - Overlap                         0      256        23        N 
+      6450      5934       474720        24        26    1.2.1.4.6.1                end_of_Scan_Load - Overlap                        255        0        23        Y 
+      6451      5935       474720        24        26    1.2.1.4.6.4                Measure_PO                                          0        1        23        Y 
+      6453      5937       474880        24        26    1.2.1.4.6.5                Scan_Unload - Shift - Overlap                       0      256        24        Y 
+      6453      5937       474880        25        27    1.2.1.4.7.1                Scan_Load - Shift - Overlap                         0      256        24        N 
+      6708      6192       495360        25        27    1.2.1.4.7.1                end_of_Scan_Load - Overlap                        255        0        24        Y 
+      6709      6193       495360        25        27    1.2.1.4.7.4                Measure_PO                                          0        1        24        Y 
+      6711      6195       495520        25        27    1.2.1.4.7.5                Scan_Unload - Shift - Overlap                       0      256        25        Y 
+      6711      6195       495520        26        28    1.2.1.4.8.1                Scan_Load - Shift - Overlap                         0      256        25        N 
+      6966      6450       516000        26        28    1.2.1.4.8.1                end_of_Scan_Load - Overlap                        255        0        25        Y 
+      6967      6451       516000        26        28    1.2.1.4.8.4                Measure_PO                                          0        1        25        Y 
+      6969      6453       516160        26        28    1.2.1.4.8.5                Scan_Unload - Shift - Overlap                       0      256        26        Y 
+      6969      6453       516160        27        29    1.2.1.4.9.1                Scan_Load - Shift - Overlap                         0      256        26        N 
+      7224      6708       536640        27        29    1.2.1.4.9.1                end_of_Scan_Load - Overlap                        255        0        26        Y 
+      7225      6709       536640        27        29    1.2.1.4.9.4                Measure_PO                                          0        1        26        Y 
+      7227      6711       536800        27        29    1.2.1.4.9.5                Scan_Unload - Shift - Overlap                       0      256        27        Y 
+      7227      6711       536800        28        30    1.2.1.4.10.1               Scan_Load - Shift - Overlap                         0      256        27        N 
+      7482      6966       557280        28        30    1.2.1.4.10.1               end_of_Scan_Load - Overlap                        255        0        27        Y 
+      7483      6967       557280        28        30    1.2.1.4.10.4               Measure_PO                                          0        1        27        Y 
+      7485      6969       557440        28        30    1.2.1.4.10.5               Scan_Unload - Shift - Overlap                       0      256        28        Y 
+      7485      6969       557440        29        31    1.2.1.4.11.1               Scan_Load - Shift - Overlap                         0      256        28        N 
+      7740      7224       577920        29        31    1.2.1.4.11.1               end_of_Scan_Load - Overlap                        255        0        28        Y 
+      7741      7225       577920        29        31    1.2.1.4.11.4               Measure_PO                                          0        1        28        Y 
+      7743      7227       578080        29        31    1.2.1.4.11.5               Scan_Unload - Shift - Overlap                       0      256        29        Y 
+      7743      7227       578080        30        32    1.2.1.4.12.1               Scan_Load - Shift - Overlap                         0      256        29        N 
+      7998      7482       598560        30        32    1.2.1.4.12.1               end_of_Scan_Load - Overlap                        255        0        29        Y 
+      7999      7483       598560        30        32    1.2.1.4.12.4               Measure_PO                                          0        1        29        Y 
+      8001      7485       598720        30        32    1.2.1.4.12.5               Scan_Unload - Shift - Overlap                       0      256        30        Y 
+      8001      7485       598720        31        33    1.2.1.4.13.1               Scan_Load - Shift - Overlap                         0      256        30        N 
+      8256      7740       619200        31        33    1.2.1.4.13.1               end_of_Scan_Load - Overlap                        255        0        30        Y 
+      8257      7741       619200        31        33    1.2.1.4.13.4               Measure_PO                                          0        1        30        Y 
+      8259      7743       619360        31        33    1.2.1.4.13.5               Scan_Unload - Shift - Overlap                       0      256        31        Y 
+      8259      7743       619360        32        34    1.2.1.4.14.1               Scan_Load - Shift - Overlap                         0      256        31        N 
+      8514      7998       639840        32        34    1.2.1.4.14.1               end_of_Scan_Load - Overlap                        255        0        31        Y 
+      8515      7999       639840        32        34    1.2.1.4.14.4               Measure_PO                                          0        1        31        Y 
+      8517      8001       640000        32        34    1.2.1.4.14.5               Scan_Unload - Shift - Overlap                       0      256        32        Y 
+      8517      8001       640000        33        35    1.2.1.4.15.1               Scan_Load - Shift - Overlap                         0      256        32        N 
+      8772      8256       660480        33        35    1.2.1.4.15.1               end_of_Scan_Load - Overlap                        255        0        32        Y 
+      8773      8257       660480        33        35    1.2.1.4.15.4               Measure_PO                                          0        1        32        Y 
+      8775      8259       660640        33        35    1.2.1.4.15.5               Scan_Unload - Shift - Overlap                       0      256        33        Y 
+      8775      8259       660640        34        36    1.2.1.4.16.1               Scan_Load - Shift - Overlap                         0      256        33        N 
+      9030      8514       681120        34        36    1.2.1.4.16.1               end_of_Scan_Load - Overlap                        255        0        33        Y 
+      9031      8515       681120        34        36    1.2.1.4.16.4               Measure_PO                                          0        1        33        Y 
+      9033      8517       681280        34        36    1.2.1.4.16.5               Scan_Unload - Shift - Overlap                       0      256        34        Y 
+      9033      8517       681280        35        37    1.2.1.5.1.1                Scan_Load - Shift - Overlap                         0      256        34        N 
+      9288      8772       701760        35        37    1.2.1.5.1.1                end_of_Scan_Load - Overlap                        255        0        34        Y 
+      9289      8773       701760        35        37    1.2.1.5.1.4                Measure_PO                                          0        1        34        Y 
+      9291      8775       701920        35        37    1.2.1.5.1.5                Scan_Unload - Shift - Overlap                       0      256        35        Y 
+      9291      8775       701920        36        38    1.2.1.5.2.1                Scan_Load - Shift - Overlap                         0      256        35        N 
+      9546      9030       722400        36        38    1.2.1.5.2.1                end_of_Scan_Load - Overlap                        255        0        35        Y 
+      9547      9031       722400        36        38    1.2.1.5.2.4                Measure_PO                                          0        1        35        Y 
+      9549      9033       722560        36        38    1.2.1.5.2.5                Scan_Unload - Shift - Overlap                       0      256        36        Y 
+      9549      9033       722560        37        39    1.2.1.5.3.1                Scan_Load - Shift - Overlap                         0      256        36        N 
+      9804      9288       743040        37        39    1.2.1.5.3.1                end_of_Scan_Load - Overlap                        255        0        36        Y 
+      9805      9289       743040        37        39    1.2.1.5.3.4                Measure_PO                                          0        1        36        Y 
+      9807      9291       743200        37        39    1.2.1.5.3.5                Scan_Unload - Shift - Overlap                       0      256        37        Y 
+      9807      9291       743200        38        40    1.2.1.5.4.1                Scan_Load - Shift - Overlap                         0      256        37        N 
+     10062      9546       763680        38        40    1.2.1.5.4.1                end_of_Scan_Load - Overlap                        255        0        37        Y 
+     10063      9547       763680        38        40    1.2.1.5.4.4                Measure_PO                                          0        1        37        Y 
+     10065      9549       763840        38        40    1.2.1.5.4.5                Scan_Unload - Shift - Overlap                       0      256        38        Y 
+     10065      9549       763840        39        41    1.2.1.5.5.1                Scan_Load - Shift - Overlap                         0      256        38        N 
+     10320      9804       784320        39        41    1.2.1.5.5.1                end_of_Scan_Load - Overlap                        255        0        38        Y 
+     10321      9805       784320        39        41    1.2.1.5.5.4                Measure_PO                                          0        1        38        Y 
+     10323      9807       784480        39        41    1.2.1.5.5.5                Scan_Unload - Shift - Overlap                       0      256        39        Y 
+     10323      9807       784480        40        42    1.2.1.5.6.1                Scan_Load - Shift - Overlap                         0      256        39        N 
+     10578     10062       804960        40        42    1.2.1.5.6.1                end_of_Scan_Load - Overlap                        255        0        39        Y 
+     10579     10063       804960        40        42    1.2.1.5.6.4                Measure_PO                                          0        1        39        Y 
+     10581     10065       805120        40        42    1.2.1.5.6.5                Scan_Unload - Shift                                 0      256        40        N 
+     10836     10320       825600        40        42    1.2.1.5.6.5                end_of_Scan_Unload                                255        0        40        Y 

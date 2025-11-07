@@ -1,0 +1,3 @@
+assign pin=rst 	test_function= -SC; 	# test_mode
+assign pin=SE 	test_function= +SE; 	# shift_enable
+assign pin=clk 	test_function= -ES; 	

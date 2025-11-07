@@ -1,0 +1,94 @@
+Starting Command: write_vectors 
+
+INFO (TDA-005): Command Line Invocation: 
+            write_vectors -language verilog -inexperiment logic -testmode FULLSCAN -scanformat serial -outputfilename four_bitcounter_modus_generated_results -workdir /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_logic_090925162957-899034000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Tuesday Sep 09 16:29:57 2025  IST
+            Host machine is ic312.vit.ac.in, x86_64 running Linux 4.18.0-425.19.2.el8_7.x86_64.
+            This job is process number 53093.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts
+            -TESTMODE FULLSCAN
+
+            -INEXPERIMENT logic
+            -LOGFILE /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/logs/log_write_vectors_FULLSCAN_logic_090925162957-899034000
+            -outputfilename four_bitcounter_modus_generated_results
+          + -language verilog
+          + -scanformat serial
+[end TDA_009]
+INFO (TVE-001): Verilog write vectors started.   [end TVE_001] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified SCAN offset for this clock 'pin clk'.  A default clock offset of 16.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/four_bitcounter_modus_generated_results.cyclemap.   [end TVE_003] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/four_bitcounter_modus_generated_results.1.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 12 total cycles, of which 4 are test cycles, 8 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 4 total measures, of which 0 are PO measures and 4 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-004): Reading test section 1.2.  Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/four_bitcounter_modus_generated_results.2.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 61 total cycles, of which 21 are test cycles, 40 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 81 total measures, of which 45 are PO measures and 36 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/four_bitcounter_modus_generated_results.mainsim.v.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+    Test       | Global   | Global   | Global   | Global   | Global   | Global   | Sequence   | Overlapped | Total      | 
+    Sequence   | Static   | Static   | Static   | Dynamic  | Dynamic  | Dynamic  | Cycle      | Cycle      | Cycle      | 
+               | Total    | Delta    | Adjusted | Total    | Delta    | Adjusted | Count      | Count      | Count      | 
+               | Coverage | Coverage | Total    | Coverage | Coverage | Total    |            |            |            | 
+               |          |          | Coverage |          |          | Coverage |            |            |            | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.1 |  50.84   |  0.00    |  50.84   |  34.31   |  0.00    |  34.31   |         11 |          0 |         12 |
+     1.2.1.1.1 |  50.84   |  0.00    |  50.84   |  34.31   |  0.00    |  34.31   |          1 |          0 |         13 |
+     1.2.1.2.1 |  55.87   |  5.03    |  55.87   |  34.31   |  0.00    |  34.31   |         11 |          5 |         24 |
+     1.2.1.2.2 |  59.22   |  3.35    |  59.22   |  34.31   |  0.00    |  34.31   |          6 |          5 |         30 |
+     1.2.1.2.3 |  61.45   |  2.23    |  61.45   |  34.31   |  0.00    |  34.31   |          6 |          5 |         36 |
+     1.2.1.2.4 |  62.57   |  1.12    |  62.57   |  34.31   |  0.00    |  34.31   |          6 |          5 |         42 |
+     1.2.1.2.5 |  74.86   |  12.29   |  74.86   |  34.31   |  0.00    |  34.31   |          6 |          5 |         48 |
+     1.2.1.2.6 |  75.98   |  1.12    |  75.98   |  34.31   |  0.00    |  34.31   |          6 |          5 |         54 |
+     1.2.1.2.7 |  78.77   |  2.79    |  78.77   |  34.31   |  0.00    |  34.31   |          6 |          5 |         60 |
+     1.2.1.2.8 |  79.89   |  1.12    |  79.89   |  34.31   |  0.00    |  34.31   |          6 |          5 |         66 |
+     1.2.1.2.9 |  100.00   |  20.11   |  100.00   |  34.31   |  0.00    |  34.31   |          7 |          0 |         73 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            5,871,104  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.27                    [end TDA_001]
+
+     Date Ended:  Tuesday Sep 09 16:29:59 2025  IST
+
+INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TVE-001): Verilog write vectors started.    
+      1 INFO (TVE-002): Verilog write vectors has completed.    
+      4 INFO (TVE-003): Verilog write vectors output file will be: /home/student/Desktop/22BEC1204_ASIC_DESIGN/synthesis/test_scripts/testresults/verilog/four_bitcounter_modus_generated_results.cyclemap.    
+      2 INFO (TVE-004): Reading test section 1.1.  Test section type equals scan.    
+      2 INFO (TVE-005): Created 12 total cycles, of which 4 are test cycles, 8 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      2 INFO (TVE-008): Created 4 total measures, of which 0 are PO measures and 4 are SO (Scan Out) measures.   
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+      2 INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name rccorner -cap_table {../../../install/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_library_set -name min_timing -timing {../../../install/FOUNDRY/digital/90nm/dig/lib/fast.lib}
+create_library_set -name max_timing -timing {../../../install/FOUNDRY/digital/90nm/dig/lib/slow.lib}
+create_constraint_mode -name constraints_pipeline_cpu -sdc_files {../synthesis/pipeline_control_generated_sdc_dft.sdc}
+create_delay_corner -name min_delay -library_set {min_timing} -rc_corner {rccorner}
+create_delay_corner -name max_delay -library_set {max_timing} -rc_corner {rccorner}
+create_analysis_view -name best_case -constraint_mode {constraints_pipeline_cpu} -delay_corner {min_delay}
+create_analysis_view -name worst_case -constraint_mode {constraints_pipeline_cpu} -delay_corner {max_delay}
+set_analysis_view -setup {worst_case} -hold {best_case}
